@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="Bsidesron.png" width="3425" height="4023">
+  <SubTexture name="ronb(Copy)/ronbsides_up0003.png" x="0" y="0"  width="582" height="720" frameX="-254" frameY="-0" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_up0002.png" x="0" y="720"  width="502" height="720" frameX="-294" frameY="-0" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_up0001.png" x="0" y="1440"  width="612" height="692" frameX="-239" frameY="-28" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_up0004.png" x="502" y="720"  width="612" height="692" frameX="-239" frameY="-28" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_up0005.png" x="582" y="0"  width="612" height="692" frameX="-239" frameY="-28" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_up0006.png" x="1114" y="692"  width="612" height="692" frameX="-239" frameY="-28" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_left0001.png" x="1194" y="0"  width="623" height="655" frameX="-122" frameY="-64" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_left0004.png" x="0" y="2132"  width="623" height="655" frameX="-122" frameY="-64" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_left0005.png" x="612" y="1412"  width="623" height="655" frameX="-122" frameY="-64" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_left0006.png" x="0" y="2787"  width="623" height="655" frameX="-122" frameY="-64" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_right0001.png" x="0" y="3442"  width="615" height="581" frameX="-390" frameY="-129" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_right0004.png" x="615" y="3442"  width="615" height="581" frameX="-390" frameY="-129" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_left0003.png" x="623" y="2067"  width="664" height="637" frameX="-81" frameY="-82" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_left0002.png" x="1235" y="1384"  width="682" height="627" frameX="-63" frameY="-92" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_idle0001.png" x="1726" y="655"  width="479" height="613" frameX="-213" frameY="-92" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_idle0004.png" x="1917" y="0"  width="479" height="613" frameX="-213" frameY="-92" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_idle0005.png" x="2396" y="0"  width="479" height="613" frameX="-213" frameY="-92" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_idle0006.png" x="623" y="2704"  width="479" height="613" frameX="-213" frameY="-92" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_right0005.png" x="1102" y="2704"  width="615" height="581" frameX="-390" frameY="-129" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_right0006.png" x="1287" y="2011"  width="615" height="581" frameX="-390" frameY="-129" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_right0003.png" x="1230" y="3285"  width="651" height="543" frameX="-390" frameY="-167" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_idle0003.png" x="1717" y="2592"  width="504" height="520" frameX="-221" frameY="-185" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_down0001.png" x="1902" y="2011"  width="550" height="513" frameX="-267" frameY="-203" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_down0004.png" x="1917" y="1268"  width="550" height="513" frameX="-267" frameY="-203" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_down0005.png" x="2452" y="613"  width="550" height="513" frameX="-267" frameY="-203" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_down0006.png" x="2875" y="0"  width="550" height="513" frameX="-267" frameY="-203" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_right0002.png" x="1881" y="3112"  width="720" height="504" frameX="-390" frameY="-206" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_down0002.png" x="2221" y="3616"  width="593" height="386" frameX="-280" frameY="-330" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_bruh0002.png" x="2814" y="3616"  width="518" height="373" frameX="-332" frameY="-333" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_idle0002.png" x="2221" y="2524"  width="570" height="504" frameX="-188" frameY="-201" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_bruh0001.png" x="2601" y="3028"  width="360" height="461" frameX="-411" frameY="-245" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_bruh0004.png" x="2452" y="1781"  width="360" height="461" frameX="-411" frameY="-245" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_bruh0005.png" x="2791" y="1126"  width="360" height="461" frameX="-411" frameY="-245" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_bruh0006.png" x="3002" y="513"  width="360" height="461" frameX="-411" frameY="-245" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_down0003.png" x="2791" y="2242"  width="577" height="447" frameX="-275" frameY="-269" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ronb(Copy)/ronbsides_bruh0003.png" x="2961" y="1587"  width="448" height="433" frameX="-367" frameY="-273" frameWidth="1280" frameHeight="720"/>
+</TextureAtlas>

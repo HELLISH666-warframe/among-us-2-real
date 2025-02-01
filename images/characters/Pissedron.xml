@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Pissedron.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ronDown0000" x="0" y="0" width="669" height="621" frameX="0" frameY="-27" frameWidth="669" frameHeight="648"/>
+	<SubTexture name="ronDown0001" x="0" y="0" width="669" height="621" frameX="0" frameY="-27" frameWidth="669" frameHeight="648"/>
+	<SubTexture name="ronDown0002" x="669" y="0" width="652" height="633" frameX="-16" frameY="-14" frameWidth="669" frameHeight="648"/>
+	<SubTexture name="ronDown0003" x="669" y="0" width="652" height="633" frameX="-16" frameY="-14" frameWidth="669" frameHeight="648"/>
+	<SubTexture name="ronDown0004" x="1321" y="0" width="645" height="645" frameX="-18" frameY="-3" frameWidth="669" frameHeight="648"/>
+	<SubTexture name="ronDown0005" x="1321" y="0" width="645" height="645" frameX="-18" frameY="-3" frameWidth="669" frameHeight="648"/>
+	<SubTexture name="ronDown0006" x="1966" y="0" width="645" height="648" frameX="-17" frameY="0" frameWidth="669" frameHeight="648"/>
+	<SubTexture name="ronDown0007" x="1966" y="0" width="645" height="648" frameX="-17" frameY="0" frameWidth="669" frameHeight="648"/>
+	<SubTexture name="ronDown0008" x="1966" y="0" width="645" height="648" frameX="-17" frameY="0" frameWidth="669" frameHeight="648"/>
+	<SubTexture name="ronDown0009" x="1966" y="0" width="645" height="648" frameX="-17" frameY="0" frameWidth="669" frameHeight="648"/>
+	<SubTexture name="ronDown0010" x="1966" y="0" width="645" height="648" frameX="-17" frameY="0" frameWidth="669" frameHeight="648"/>
+	<SubTexture name="ronDown0011" x="1966" y="0" width="645" height="648" frameX="-17" frameY="0" frameWidth="669" frameHeight="648"/>
+	<SubTexture name="ronDown0012" x="1966" y="0" width="645" height="648" frameX="-17" frameY="0" frameWidth="669" frameHeight="648"/>
+	<SubTexture name="ronDown0013" x="1966" y="0" width="645" height="648" frameX="-17" frameY="0" frameWidth="669" frameHeight="648"/>
+	<SubTexture name="ronDown0014" x="1966" y="0" width="645" height="648" frameX="-17" frameY="0" frameWidth="669" frameHeight="648"/>
+	<SubTexture name="ronIdle0000" x="2611" y="0" width="546" height="1037" frameX="-44" frameY="-10" frameWidth="590" frameHeight="1047"/>
+	<SubTexture name="ronIdle0001" x="2611" y="0" width="546" height="1037" frameX="-44" frameY="-10" frameWidth="590" frameHeight="1047"/>
+	<SubTexture name="ronIdle0002" x="3157" y="0" width="540" height="1047" frameX="-41" frameY="0" frameWidth="590" frameHeight="1047"/>
+	<SubTexture name="ronIdle0003" x="3157" y="0" width="540" height="1047" frameX="-41" frameY="0" frameWidth="590" frameHeight="1047"/>
+	<SubTexture name="ronIdle0004" x="0" y="1047" width="535" height="1047" frameX="-12" frameY="0" frameWidth="590" frameHeight="1047"/>
+	<SubTexture name="ronIdle0005" x="0" y="1047" width="535" height="1047" frameX="-12" frameY="0" frameWidth="590" frameHeight="1047"/>
+	<SubTexture name="ronIdle0006" x="535" y="1047" width="532" height="1046" frameX="-3" frameY="-1" frameWidth="590" frameHeight="1047"/>
+	<SubTexture name="ronIdle0007" x="535" y="1047" width="532" height="1046" frameX="-3" frameY="-1" frameWidth="590" frameHeight="1047"/>
+	<SubTexture name="ronIdle0008" x="1067" y="1047" width="532" height="1045" frameX="0" frameY="-2" frameWidth="590" frameHeight="1047"/>
+	<SubTexture name="ronIdle0009" x="1067" y="1047" width="532" height="1045" frameX="0" frameY="-2" frameWidth="590" frameHeight="1047"/>
+	<SubTexture name="ronIdle0010" x="1599" y="1047" width="532" height="1045" frameX="0" frameY="-2" frameWidth="590" frameHeight="1047"/>
+	<SubTexture name="ronIdle0011" x="1599" y="1047" width="532" height="1045" frameX="0" frameY="-2" frameWidth="590" frameHeight="1047"/>
+	<SubTexture name="ronIdle0012" x="1599" y="1047" width="532" height="1045" frameX="0" frameY="-2" frameWidth="590" frameHeight="1047"/>
+	<SubTexture name="ronIdle0013" x="1599" y="1047" width="532" height="1045" frameX="0" frameY="-2" frameWidth="590" frameHeight="1047"/>
+	<SubTexture name="ronIdle0014" x="1599" y="1047" width="532" height="1045" frameX="0" frameY="-2" frameWidth="590" frameHeight="1047"/>
+	<SubTexture name="ronLeft0000" x="2131" y="1047" width="860" height="1008" frameX="0" frameY="-1" frameWidth="862" frameHeight="1009"/>
+	<SubTexture name="ronLeft0001" x="2131" y="1047" width="860" height="1008" frameX="0" frameY="-1" frameWidth="862" frameHeight="1009"/>
+	<SubTexture name="ronLeft0002" x="2991" y="1047" width="841" height="1008" frameX="-20" frameY="-1" frameWidth="862" frameHeight="1009"/>
+	<SubTexture name="ronLeft0003" x="2991" y="1047" width="841" height="1008" frameX="-20" frameY="-1" frameWidth="862" frameHeight="1009"/>
+	<SubTexture name="ronLeft0004" x="0" y="2094" width="834" height="1008" frameX="-27" frameY="-1" frameWidth="862" frameHeight="1009"/>
+	<SubTexture name="ronLeft0005" x="0" y="2094" width="834" height="1008" frameX="-27" frameY="-1" frameWidth="862" frameHeight="1009"/>
+	<SubTexture name="ronLeft0006" x="834" y="2094" width="833" height="1009" frameX="-29" frameY="0" frameWidth="862" frameHeight="1009"/>
+	<SubTexture name="ronLeft0007" x="834" y="2094" width="833" height="1009" frameX="-29" frameY="0" frameWidth="862" frameHeight="1009"/>
+	<SubTexture name="ronLeft0008" x="1667" y="2094" width="833" height="1009" frameX="-29" frameY="0" frameWidth="862" frameHeight="1009"/>
+	<SubTexture name="ronLeft0009" x="1667" y="2094" width="833" height="1009" frameX="-29" frameY="0" frameWidth="862" frameHeight="1009"/>
+	<SubTexture name="ronLeft0010" x="1667" y="2094" width="833" height="1009" frameX="-29" frameY="0" frameWidth="862" frameHeight="1009"/>
+	<SubTexture name="ronLeft0011" x="1667" y="2094" width="833" height="1009" frameX="-29" frameY="0" frameWidth="862" frameHeight="1009"/>
+	<SubTexture name="ronLeft0012" x="1667" y="2094" width="833" height="1009" frameX="-29" frameY="0" frameWidth="862" frameHeight="1009"/>
+	<SubTexture name="ronLeft0013" x="1667" y="2094" width="833" height="1009" frameX="-29" frameY="0" frameWidth="862" frameHeight="1009"/>
+	<SubTexture name="ronLeft0014" x="1667" y="2094" width="833" height="1009" frameX="-29" frameY="0" frameWidth="862" frameHeight="1009"/>
+	<SubTexture name="ronRight0000" x="2500" y="2094" width="826" height="1026" frameX="-1" frameY="-7" frameWidth="827" frameHeight="1033"/>
+	<SubTexture name="ronRight0001" x="2500" y="2094" width="826" height="1026" frameX="-1" frameY="-7" frameWidth="827" frameHeight="1033"/>
+	<SubTexture name="ronRight0002" x="0" y="3120" width="808" height="1033" frameX="0" frameY="0" frameWidth="827" frameHeight="1033"/>
+	<SubTexture name="ronRight0003" x="0" y="3120" width="808" height="1033" frameX="0" frameY="0" frameWidth="827" frameHeight="1033"/>
+	<SubTexture name="ronRight0004" x="808" y="3120" width="803" height="1033" frameX="-1" frameY="0" frameWidth="827" frameHeight="1033"/>
+	<SubTexture name="ronRight0005" x="808" y="3120" width="803" height="1033" frameX="-1" frameY="0" frameWidth="827" frameHeight="1033"/>
+	<SubTexture name="ronRight0006" x="1611" y="3120" width="803" height="1033" frameX="-1" frameY="0" frameWidth="827" frameHeight="1033"/>
+	<SubTexture name="ronRight0007" x="1611" y="3120" width="803" height="1033" frameX="-1" frameY="0" frameWidth="827" frameHeight="1033"/>
+	<SubTexture name="ronRight0008" x="1611" y="3120" width="803" height="1033" frameX="-1" frameY="0" frameWidth="827" frameHeight="1033"/>
+	<SubTexture name="ronRight0009" x="1611" y="3120" width="803" height="1033" frameX="-1" frameY="0" frameWidth="827" frameHeight="1033"/>
+	<SubTexture name="ronRight0010" x="1611" y="3120" width="803" height="1033" frameX="-1" frameY="0" frameWidth="827" frameHeight="1033"/>
+	<SubTexture name="ronRight0011" x="1611" y="3120" width="803" height="1033" frameX="-1" frameY="0" frameWidth="827" frameHeight="1033"/>
+	<SubTexture name="ronRight0012" x="1611" y="3120" width="803" height="1033" frameX="-1" frameY="0" frameWidth="827" frameHeight="1033"/>
+	<SubTexture name="ronRight0013" x="1611" y="3120" width="803" height="1033" frameX="-1" frameY="0" frameWidth="827" frameHeight="1033"/>
+	<SubTexture name="ronRight0014" x="1611" y="3120" width="803" height="1033" frameX="-1" frameY="0" frameWidth="827" frameHeight="1033"/>
+	<SubTexture name="ronUp0000" x="2414" y="3120" width="1020" height="1098"/>
+	<SubTexture name="ronUp0001" x="2414" y="3120" width="1020" height="1098"/>
+	<SubTexture name="ronUp0002" x="0" y="4218" width="1017" height="1072" frameX="-1" frameY="-23" frameWidth="1020" frameHeight="1098"/>
+	<SubTexture name="ronUp0003" x="0" y="4218" width="1017" height="1072" frameX="-1" frameY="-23" frameWidth="1020" frameHeight="1098"/>
+	<SubTexture name="ronUp0004" x="1017" y="4218" width="1000" height="1066" frameX="-8" frameY="-29" frameWidth="1020" frameHeight="1098"/>
+	<SubTexture name="ronUp0005" x="1017" y="4218" width="1000" height="1066" frameX="-8" frameY="-29" frameWidth="1020" frameHeight="1098"/>
+	<SubTexture name="ronUp0006" x="2017" y="4218" width="995" height="1066" frameX="-10" frameY="-29" frameWidth="1020" frameHeight="1098"/>
+	<SubTexture name="ronUp0007" x="2017" y="4218" width="995" height="1066" frameX="-10" frameY="-29" frameWidth="1020" frameHeight="1098"/>
+	<SubTexture name="ronUp0008" x="3012" y="4218" width="987" height="1066" frameX="-14" frameY="-29" frameWidth="1020" frameHeight="1098"/>
+	<SubTexture name="ronUp0009" x="3012" y="4218" width="987" height="1066" frameX="-14" frameY="-29" frameWidth="1020" frameHeight="1098"/>
+	<SubTexture name="ronUp0010" x="3012" y="4218" width="987" height="1066" frameX="-14" frameY="-29" frameWidth="1020" frameHeight="1098"/>
+	<SubTexture name="ronUp0011" x="3012" y="4218" width="987" height="1066" frameX="-14" frameY="-29" frameWidth="1020" frameHeight="1098"/>
+	<SubTexture name="ronUp0012" x="3012" y="4218" width="987" height="1066" frameX="-14" frameY="-29" frameWidth="1020" frameHeight="1098"/>
+	<SubTexture name="ronUp0013" x="3012" y="4218" width="987" height="1066" frameX="-14" frameY="-29" frameWidth="1020" frameHeight="1098"/>
+	<SubTexture name="ronUp0014" x="3012" y="4218" width="987" height="1066" frameX="-14" frameY="-29" frameWidth="1020" frameHeight="1098"/>
+</TextureAtlas>
