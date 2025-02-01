@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<character isPlayer="false" flipX="false" holdTime="6.1" sprite="Majin" antialiasing="false"> <!-- CONVERTED VIA psychjsontocodenamexml.py by Burgerballs -->
+
+   <anim name="singLEFT" anim="Majin left" fps="30" loop="false" x="40" y="60"/>
+   <anim name="singDOWN" anim="Majin down" fps="30" loop="false" x="40" y="60"/>
+   <anim name="singUP" anim="Majin up" fps="30" loop="false" x="40" y="60"/>
+   <anim name="singRIGHT" anim="Majin right" fps="30" loop="false" x="40" y="60"/>
+   <anim name="idle" anim="Majin idle" fps="30" loop="true" x="40" y="60"/>
+
+</character>

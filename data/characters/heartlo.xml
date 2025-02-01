@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="utHeart" icon="bf-pixel" color="#7bd6f6" antialiasing="false" camx="20" camy="90" holdTime="6.1" scale="2">
+	<anim name="stand" anim="idle instance 1" x="-5" y="-4" fps="12"/>
+	<anim name="idle" anim="idleAnimated instance 1" x="-1" y="0" fps="12"/>
+	<anim name="singLEFT" anim="left instance 1" x="25" y="-3"/>
+	<anim name="singDOWN" anim="down instance 1" x="1" y="-19"/>
+	<anim name="singUP" anim="up instance 1" x="-5" y="15"/>
+	<anim name="singRIGHT" anim="right instance 1" x="-16.5" y="-2.5"/>
+</character>

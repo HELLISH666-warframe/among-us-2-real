@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.9" folder="stages/hellStreet/">
+    <sprite name="escape_fire" x="300" y="300" sprite="escape_fire" scroll="1" type="loop"   scale="6"   >
+         <anim name="escape_fire" anim="fire instance " loop="true"/>
+    </sprite>
+</stage>

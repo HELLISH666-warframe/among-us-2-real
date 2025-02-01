@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="ateloron-Transform" icon="atelo-ron" color="#ffffff" x="-210" y="190" camx="10" holdTime="6.1" scale="1.2">
+	<anim name="idle" anim="ohnohetransformed" x="-43.333333333333336" y="-29.166666666666668" indices="0,0"/>
+	<anim name="hey" anim="transformation" x="-43.333333333333336" y="-32.5" fps="30"/>
+</character>

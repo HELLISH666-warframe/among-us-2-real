@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<character x="-60" y="200" sprite="hahanotscary" antialiasing="false" icon="hahanotscary" color="#F80000">
+	<anim name="singDOWN" anim="Sing Down" x="40" y="-114" fps="48" loop="false"/>
+	<anim name="singUP" anim="Sing Up" x="31" y="15" fps="48" loop="false"/>
+	<anim name="singRIGHT" anim="Sing Right" x="2" y="-31" fps="48" loop="false"/>
+	<anim name="singLEFT" anim="Sing Left" x="6" y="-19" fps="48" loop="false"/>
+	<anim name="idle" anim="Idle" x="0" y="0" fps="48" loop="true"/>
+	<anim name="Bruh" anim="Bruh" x="71" y="-12" fps="24" loop="true"/>
+</character>

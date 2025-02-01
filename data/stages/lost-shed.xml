@@ -1,0 +1,32 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.8" folder="stages/">
+   	<sprite name="sky" x="-800" y="-400" sprite="ron/ron_sky" scroll="0.1" />
+   	<sprite name="bigcloud" x="-800" y="-800" sprite="ron/ron_clouds" scroll="0.1" />
+   	<sprite name="backcity" x="-800" y="-400" sprite="ron/ron_cityback" scroll="0.2" />
+   	<sprite name="city" x="-800" y="-400" sprite="ron/ron_city" scroll="0.25" />
+	<sprite name="backmountain" x="-800" y="-400" sprite="ron/ron_mountainsback" scroll="0.3" />
+	<sprite name="mountain" x="-800" y="-400" sprite="ron/ron_mountains" scroll="0.3" />
+	<sprite name="hill" x="-800" y="-400" sprite="ron/ron_hillfront" scroll="0.4" />
+	<sprite name="street" x="-800" y="-400" sprite="ron/ron_street" />
+   	<sprite name="sky2" x="-800" y="-400" sprite="/pissedStreet/wasted_sky" scroll="0.1" />
+   	<sprite name="city2" x="-800" y="-400" sprite="/pissedStreet/wasted_city" scroll="0.25"/>
+   	<sprite name="mountains2" x="-800" y="-400" sprite="/pissedStreet/wasted_mountains" scroll="0.3"/>
+   	<sprite name="hillfront2" x="-800" y="-400" sprite="/pissedStreet/wasted_hillfront" scroll="0.3"/>
+   	<sprite name="fog2" x="-800" y="-400" sprite="/pissedStreet/fog" scale="3" scroll="0.1"/>
+   	<sprite name="street2" x="-800" y="-400" sprite="/pissedStreet/wasted_street" />
+    <sprite name="sky3" x="-800" y="-400" sprite="hellStreet/bloodshed_sky" scroll="0.1"/>
+   	<sprite name="city3" x="-800" y="-400" sprite="hellStreet/bloodshed_city" scroll="0.25"/>
+   	<sprite name="mountains3" x="-800" y="-400" sprite="hellStreet/bloodshed_mountains" scroll="0.3"/>
+    <sprite name="hellbg" x="340" y="340" sprite="classicStages/hell_bg" scroll="0.9"  type="loop" />
+      <anim name="hell_bg" anim="idle instance " loop="true"/>
+     <sprite name="firebg" x="300" y="-200" sprite="hellStreet/escape_fire" scroll="1" type="loop"   scale="6"   />
+         <anim name="escape_fire" anim="fire instance " loop="true"/>
+    <sprite name="satan" x="-100" y="-400" sprite="hellStreet/hellRon_satan" scale="1.2" scroll="0.7"/>
+   	<sprite name="street3" x="-800" y="-400" sprite="hellStreet/bloodshed_street"/>
+     <sprite name="bloodshed_lamp"  x="900" y="-300"   sprite="hellStreet/bloodshed_lamp"    scroll="1"  scale="1"   />
+    	    <sprite name="islands" x="-800" y="-640" sprite="hellStreet/bloodshed_streetBroken" scroll="1"  scale="1"   />
+	<dad />
+   	<boyfriend />
+	<sprite name="firetrojan_staticbg" x="300" y="-400" sprite="classicStages/trojan_static" scroll="1" type="loop"   scale="6"   />
+         <anim name="trojan_static" anim="static instance " loop="true"/>
+</stage>

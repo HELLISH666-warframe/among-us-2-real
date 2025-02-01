@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<character isPlayer="false" flipX="true" holdTime="2" sprite="rewritespr" antialiasing="false"> <!-- CONVERTED VIA psychjsontocodenamexml.py by Burgerballs -->
+
+   <anim name="singLEFT" anim="rewritespr left" loop="false" x="-520" y="-180"/>
+   <anim name="singDOWN" anim="rewritespr down" loop="false" x="-520" y="-180"/>
+   <anim name="singUP" anim="rewritespr up" loop="false" x="-520" y="-180"/>
+   <anim name="singRIGHT" anim="rewritespr right" loop="false" x="-520" y="-180"/>
+   <anim name="idle" anim="rewritespr idle" fps="12" loop="true" x="-520" y="-180"/>
+
+</character>

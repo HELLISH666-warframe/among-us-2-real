@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="godron" icon="godron" color="#ffffff" y="350" antialiasing="false" camx="-320" camy="-120">
+	<anim name="idle" anim="idleg" x="110" y="205"/>
+	<anim name="singRIGHT" anim="rightg" x="142" y="215"/>
+	<anim name="singUP" anim="upg" x="124" y="287"/>
+	<anim name="singDOWN" anim="downg" x="160" y="169"/>
+	<anim name="singLEFT" anim="leftg" x="213" y="228"/>
+	<anim name="crazy" anim="crazyg" x="202" y="240" loop="true"/>
+</character>

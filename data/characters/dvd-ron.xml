@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="DvdRon" x="-100" y="300" icon="rondvd" color="#FDFB00">
+	<anim name="idle" anim="Idle" x="-5" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="Left" x="315" y="-46" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="Down" x="0" y="-41" fps="24" loop="false"/>
+	<anim name="singUP" anim="Up" x="-66" y="87" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="Right" x="-118" y="-7" fps="24" loop="false"/>
+</character>

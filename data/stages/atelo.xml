@@ -1,0 +1,16 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.8" name="trojan-two" folder="stages/atelo">
+    <girlfriend />
+    <sprite name="atelo_bg" x="300" y="300" sprite="atelo_bg" scroll="1" type="loop" scale="4"   >
+         <anim name="atelo_bg" anim="bg instance " loop="true"/>
+         </sprite>
+    <sprite name="atelo_ground" x="200" y="70" sprite="atelo_ground" scroll="1" scale="2" />
+    <sprite name="atelo_lamp" x="1000" y="-15" sprite="atelo_lamp" scroll="1" type="loop" scale="2.6" >
+         <anim name="atelo_lamp" anim="lamppost instance " loop="true"/>
+         </sprite>
+         	<dad />
+	<boyfriend />
+    <sprite name="atelo_popup_animated" x="1000" y="200" sprite="atelo_popup_animated" scroll="1" type="loop" scale="2"   >
+         <anim name="atelo_popup_animated" anim="popups instance " loop="true"/>
+         </sprite>
+</stage>

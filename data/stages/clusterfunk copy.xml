@@ -1,0 +1,4 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.9" folder="stages/clusterfunk/">
+	<sprite name="firebg" x="-800" y="-120" scale="2" sprite="bg" updateHitbox="true"/>
+</stage>

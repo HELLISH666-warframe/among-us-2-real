@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character y="350" sprite="non-offic/Tankman-b" camx="-200" icon="ron-b" color="#AB35EB">
+	<anim name="idle" anim="idle" x="-5" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="left" x="0" y="-3" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="down" x="-3" y="-31" fps="24" loop="false"/>
+	<anim name="singUP" anim="up" x="-3" y="0" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="30" y="-7" fps="24" loop="false"/>
+</character>

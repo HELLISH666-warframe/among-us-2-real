@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="ateloron_sprited" icon="ateloron" color="#ffffff" x="-60" y="180"  antialiasing="false" camx="50" camy="390" holdTime="6.1" scale="10">
+	<anim name="singLEFT" anim="left" x="-22.5" y="-34.5"/>
+	<anim name="singDOWN" anim="down" x="-23.2" y="-34.5"/>
+	<anim name="singUP" anim="up" x="-23.5" y="-34.5"/>
+	<anim name="singRIGHT" anim="right" x="-22.5" y="-34.5"/>
+	<anim name="idle" anim="idle" x="-22.5" y="-34.5" fps="19"/>
+</character>

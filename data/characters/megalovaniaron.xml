@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="utRon" icon="hellronpixel" color="#000000" x="-10" y="20" antialiasing="false" camx="-200" camy="-70" holdTime="6.1" scale="5">
+	<anim name="idle" anim="idle instance 1" x="-0.4" y="0" fps="12"/>
+	<anim name="singLEFT" anim="left instance 1" x="-6.4" y="-1.2"/>
+	<anim name="singDOWN" anim="down instance 1" x="-1.2" y="-0.6"/>
+	<anim name="singUP" anim="up instance 1" x="-0.2" y="-2.2"/>
+	<anim name="singRIGHT" anim="right instance 1" x="12.8" y="-1.6"/>
+</character>

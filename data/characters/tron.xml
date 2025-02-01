@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="tron" icon="ronpower" color="#ffd700" x="0" y="190" camx="40" camy="-100" holdTime="6.1">
+	<anim name="idle" anim="ohnohetransformed" indices="0,0"/>
+	<anim name="hey" anim="Tron Transform" fps="30"/>
+</character>

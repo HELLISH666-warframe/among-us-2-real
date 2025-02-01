@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="non-offic/Bsidesron" icon="ronslightly-b" color="#ab35eb" y="350" scale="0.8"  camx="-200">
+	<anim name="idle" anim="ronb(Copy)/ronbsides_idle" x="-5" y="300"/>
+	<anim name="singLEFT" anim="ronb(Copy)/ronbsides_left" x="-0" y="300"/>
+	<anim name="singDOWN" anim="ronb(Copy)/ronbsides_down" x="-3" y="300"/>
+	<anim name="singUP" anim="ronb(Copy)/ronbsides_up" x="-3" y="300"/>
+	<anim name="singRIGHT" anim="ronb(Copy)/ronbsides_right" x="30" y="300"/>
+</character>

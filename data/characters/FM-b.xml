@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character y="200" sprite="FMronB" scale="1.2" antialiasing="false" color="#EEE3E3" isGF="false"  camx="-17" camy="179"  >
+	<anim name="idle" anim="FMronB Idle" x="0" y="0" fps="24" loop="true"/>
+	<anim name="singUP" anim="FMronB Up" x="0" y="200" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="FMronB Right" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="FMronB Left" x="0" y="-0" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="FMronB Down" x="0" y="-100" fps="24" loop="false"/>
+</character>

@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="ronUnderwater" scale="1.1" icon="ronslightly" color="#D4D200">
+	<anim name="singLEFT" anim="left" x="140" y="-40" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="down" x="-30" y="-90" fps="24" loop="false"/>
+	<anim name="singUP" anim="up" x="-20" y="50" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="-45" y="-45" fps="24" loop="false"/>
+	<anim name="idle" anim="idle" x="0" y="0" fps="24" loop="false"/>
+</character>
