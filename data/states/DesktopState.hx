@@ -1,6 +1,7 @@
-static var crt:CustomShader  = new CustomShader("fake CRT");
+//𝔽𝕣𝕒𝕜𝕚𝕥𝕤_made_this_i_just_added_the_shaders
+var crt:CustomShader  = new CustomShader("fake CRT");
 var bit:CustomShader  = new CustomShader("8bitcolor");
-var chrom:CustomShader  = new CustomShader("8bitcolor");
+var chrom:CustomShader  = new CustomShader("chromatic aberration");
 var rainbowscreen:FlxBackdrop;
 import funkin.options.OptionsMenu;
 import funkin.menus.ModSwitchMenu;
@@ -9,11 +10,11 @@ import flixel.addons.display.FlxBackdrop;
 import flixel.ui.FlxButton;
 var icons:Map<String, Dynamic> = [
 	"discord" => "https://discord.gg/ron-874366610918473748",
-	"random" => "https://www.facebook.com",
+	"random" => (new ModState('MasterFreeplayState'))
 	"settings" => new OptionsMenu(),
-	"freeplay" => (new ModState('MasterFreeplayState'))
-	"story mode" => new StoryMenuState()
-	"credits" => new CreditsMain()
+	"freeplay" => new FreeplayState(),
+	"story mode" => "story mode is idiot",
+	"credits" => (new ModState('CreditsRon')),
 ];
 var camText:FlxCamera;
 public var leftState:Bool = false;
@@ -43,14 +44,14 @@ function create() {
 	add(sanstitre);
 	add(rainbowscreen);
 	add(new FlxSprite().loadGraphic(Paths.image("menus/desktop/pcBg")));
-	if (FlxG.save.data.crt){FlxG.camera.addShader(crt);}
-	if (FlxG.save.data.colour) {FlxG.camera.addShader(bit);
-	bit.data.enablethisbitch.value = [1.];}
-	if (FlxG.save.data.chrom) {FlxG.camera.addShader(chrom);
-		chrom.data.rOffset.value = [1/2];
-		chrom.data.gOffset.value = [0.0];
-		chrom.data.bOffset.value = [1 * -1];
-	}
+			if (FlxG.save.data.crt){FlxG.camera.addShader(crt);}
+			if (FlxG.save.data.colour) {FlxG.camera.addShader(bit);
+			bit.data.enablethisbitch.value = [1.];}
+			if (FlxG.save.data.chrom) {FlxG.camera.addShader(chrom);
+				chrom.data.rOffset.value = [1/2];
+				chrom.data.gOffset.value = [0.0];
+				chrom.data.bOffset.value = [1 * -1];
+			}
 	
 	window = new FlxSprite(FlxG.width/1.3-405,ywindow);
 	window.frames = Paths.getSparrowAtlas('menus/desktop/menuCarNew');
@@ -75,19 +76,34 @@ function create() {
 				button.color = 0xFF485EC2;
 				if (clickAmounts == 2) {
 					if (icons[i] == "story mode is idiot") {
-						if (transitioningStory) {return;}
-						transitioningStory = true;
-						//StoryMenuState.musicTime = FlxG.sound.music.time;
-						//new StoryMenuState();
-						//transitioningToIdiotism = true;
-						//rainbTmr.cancel();
-						//new FlxTimer().start(1.5, function(tmr:FlxTimer){
-						//	FlxG.camera.fade(0x88FFFFFF, 0.6, false);
-						//	new FlxTimer().start(2, function(tmr:FlxTimer){ FlxG.switchState(new StoryMenuState()); FlxG.camera.fade(0x88FFFFFF, 0, true);});
-						//});
+//						PlayState.loadSong("ron", "hard");
+						FlxG.switchState(new PlayState());
+						PlayState.loadWeek({
+							name: "main",
+							id: "main", // idk what this is i would use the week name lol
+							sprite: null,
+							chars: [null, null, null],
+							songs: [{name: 'ron', hide: false}, {name: 'wasted', hide: false}, {name: 'ayo', hide: false}, {name: 'bloodshed', hide: false}, {name: 'trojan-virus', hide: false},],
+							difficulties: ['hard']
+							}, "hard");
+/*						PlayState.loadWeek("ron", "hard");
+						PlayState.isStoryMode = true;
+						FlxG.switchState.isStoryMode = true;
+						PlayState.storyWeek = {
+							name: "ron"
+						}
+*/						/*StoryMenuState.musicTime = FlxG.sound.music.time;
+						new StoryMenuState();
+						transitioningToIdiotism = true;
+						rainbTmr.cancel();
+						new FlxTimer().start(1.5, function(tmr:FlxTimer){
+							FlxG.camera.fade(0x88FFFFFF, 0.6, false);
+							new FlxTimer().start(2, function(tmr:FlxTimer){ FlxG.switchState(new StoryMenuState()); FlxG.camera.fade(0x88FFFFFF, 0, true);});
+						});
 						var video:misc.MP4Handler = new misc.MP4Handler();
 						openSubState(new misc.CustomFadeTransition(.8, false));
-						new FlxTimer().start(.5, function(tmr:FlxTimer)
+												video.playMP4(Paths.videoRon('ron'), new PlayState(), false, false, false);
+						*/new FlxTimer().start(.5, function(tmr:FlxTimer)
 						{
 							trace("hi");
 						});
@@ -129,6 +145,10 @@ function update(elapsed:Float) {
 
 	FlxG.mouse.visible = true;
 	if (FlxG.keys.pressed.CONTROL && FlxG.keys.justPressed.R) add(new RunTab());
+	{time += elapsed;
+		chrom.data.rOffset.value = [0.005*Math.sin(time)];
+		chrom.data.bOffset.value = [-0.005*Math.sin(time)];
+	}
 }
 import flixel.group.FlxSpriteGroup;
 class RunTab extends flixel.FlxBasic {

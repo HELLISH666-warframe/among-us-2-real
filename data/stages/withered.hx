@@ -11,7 +11,8 @@ FlxG.scaleMode.width = 880;
 var chrom:CustomShader  = new CustomShader("chromatic aberration");
 override function update(elapsed:Float){            if (FlxG.save.data.chrom) {time += elapsed;
 	chrom.data.rOffset.value = [0.009*Math.sin(time)];
-	chrom.data.bOffset.value = [-0.009*Math.sin(time)];}}
+	chrom.data.bOffset.value = [-0.009*Math.sin(time)];}
+	for (i in 1...4) __script__.get("rain" + i).shader.iTime = Conductor.songPosition / 1000;}
 function postCreate() {
     var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('stages/bobtwerked/annoyed_sky'));
     bg.setGraphicSize(Std.int(bg.width * 0.75));
@@ -34,6 +35,16 @@ function postCreate() {
     wBackground.screenCenter();
     insert(3, wBackground);
     add(wBackground);
+    for (i in 1...4) {
+		var rainshader = new CustomShader("rain");
+		rainshader.zoom = (i / 3) * 70;
+		rainshader.raindropLength = 0.1 / i;
+		rainshader.opacity = 0.25;
+		__script__.get("rain" + i).shader = rainshader;
+	}
+    stage.getSprite("rain1").insert = 1;
+    insert(1, rain3);
+    insert(1, rain2);
     witheredClouds = new FlxBackdrop(Paths.image('stages/bobtwerked/annoyed_cloud'), FlxAxes.X, 0, 0);
     witheredClouds.scrollFactor.set(0.2,0);
     witheredClouds.screenCenter();
@@ -67,6 +78,10 @@ function stepHit(step)
             defaultCamZoom -= 0.02;
         case 127:
             defaultCamZoom = 0.75;
+            case 256:
+                FlxTween.tween(blackeffect, {alpha: 0}, 1, {ease: FlxEase.quadInOut});
+                FlxTween.tween(bgbleffect, {alpha: 0}, 1, {ease: FlxEase.quadInOut});
+                defaultCamZoom += 0.1;
         case 128 | 260 | 320 | 336 | 368:
             defaultCamZoom += 0.1;
         case 383:
@@ -96,7 +111,7 @@ function stepHit(step)
         case 1024:
             defaultCamZoom += 0.1;
         case 1120:
-            if (FlxG.save.data.chrom) {FlxG.camera.addShader(chrom);chrom.data.rOffset.value = [1/2];
+            if (FlxG.save.data.chrom) {FlxG.camera.addShader(chrom);camHUD.addShader(chrom);chrom.data.rOffset.value = [1/2];
                 chrom.data.gOffset.value = [0.0];chrom.data.bOffset.value = [1 * -1];}
             dad.x += 80;
             dad.y += 80;

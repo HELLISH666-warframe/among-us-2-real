@@ -3,6 +3,8 @@ wasted
 ayo
 bloodshed
 Trojan-virus
+Recycle-Bin
+file-manipulation
 
 ron-classic
 wasted-classic
@@ -32,13 +34,6 @@ awesome-ron
 fardventure
 bleeding
 
-Ron-b
-Wasted-b
-blizzard
-File-manipulation-b
-
-Recycle-Bin
-file-manipulation
 bloodshed-two
 triple_ron
 double-trouble
@@ -46,5 +41,6 @@ haemorrhage
 cheese-touch
 triad
 
+bloodlovania
 anti-piracy copy
 lost-bloodshed

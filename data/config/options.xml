@@ -10,6 +10,7 @@
 			<checkbox id="rain" name="RAIN" desc="fucking_rain" />
 	<checkbox id="pussy" name="NO_GAME_KILLING_ITSELF" desc="having_skill_issue?_anable_this" />
 	<checkbox id="warning" name="warnings" desc="toggle_the_startup_warning(DOESNT_WORK_YET)" />
+	<checkbox id="legacy" name="legacy-mode" desc="toggle_the_startup_warning(DOESNT_WORK_YET)" />
 	    <checkbox id="dev" name="Developer Mode" desc="Enables debug_tools.hx, allows for speeding up/slowing down the game.
 	PRESS 1 - Skip Song
 	PRESS 2 - Slows Game By 10% (Min Speed: 10%)

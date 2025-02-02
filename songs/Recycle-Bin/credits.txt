@@ -2,8 +2,7 @@ COMPOSER(s)
 Anonymous
 
 CHARTER(s)
-(og)Kurtfan5468
-The Conester92
+Kurtfan5468
 
 ARTIST(s)
 Seezee

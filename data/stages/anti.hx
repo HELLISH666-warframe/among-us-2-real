@@ -8,9 +8,10 @@ var chrom:CustomShader  = new CustomShader("chromatic aberration");
 var vhs:CustomShader  = new CustomShader("vhs");
 var glitchShader:CustomShader  = new CustomShader("glitchShader");
 //FlxG.resizeWindow(width, 1180);
-FlxG.scaleMode.width = 1180;
-FlxG.scaleMode.height = 960;
-camHUD.height = 957;
+FlxG.scaleMode.width = 880;
+    FlxG.scaleMode.height = 760;
+    camHUD.width = 880;
+    camHUD.height = 957;
 Estatic = new FlxSprite().loadGraphic(Paths.image('stages/deadly'));
 Estatic.scrollFactor.set();
 Estatic.screenCenter();
@@ -63,7 +64,7 @@ function stepHit(curStep)
         {
             if (curStep == 1)
                 {
-                    for (i in 0...playerStrums.members.length) FlxTween.tween(playerStrums.members[i], {x: playerStrums.members[i].x - 325}, (Conductor.crochet/800), {ease: FlxEase.linear});
+                    for (i in 0...playerStrums.members.length) FlxTween.tween(playerStrums.members[i], {x: playerStrums.members[i].x - 235}, (Conductor.crochet/800), {ease: FlxEase.linear});
                     for (i in 0...cpuStrums.members.length) FlxTween.tween(cpuStrums.members[i], {x: cpuStrums.members[i].x - 650 }, (Conductor.crochet/400), {ease: FlxEase.linear});
                 }
             }

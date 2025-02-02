@@ -2,6 +2,7 @@ import funkin.editors.ui.UIState;
 import funkin.backend.utils.WindowUtils;
 import funkin.backend.system.Main;
 import funkin.menus.MainMenuState;
+import funkin.menus.TitleState;
 import lime.app.Application;
 import funkin.backend.scripting.ModState;
 import flixel.graphics.FlxGraphic;
@@ -17,7 +18,7 @@ function new()
         if (FlxG.save.data.crt == null) FlxG.save.data.crt = true;
         if (FlxG.save.data.colour == null) FlxG.save.data.colour = true;
         if (FlxG.save.data.fish == null) FlxG.save.data.fish = true;
-        //if (FlxG.save.data.drunk == null) FlxG.save.data.drunk = true;
+        if (FlxG.save.data.legacy == null) FlxG.save.data.legacy = true;
         if (FlxG.save.data.vhs == null) FlxG.save.data.vhs = true;
         if (FlxG.save.data.rain == null) FlxG.save.data.rain = true;
     
@@ -34,10 +35,14 @@ function update() {
 WindowUtils.winTitle = "versus literly every fanmade fanmade mod ever";
 window.setIcon(Image.fromBytes(Assets.getBytes(Paths.image('icon'))));
 var redirectStates:Map<FlxState, String> = [
-    MainMenuState => "DesktopState", 
+    TitleState => "TitleState copy 2", 
+    //MainMenuState => "DesktopState"
 ];
 
 function preStateSwitch() {
+//    if (FlxG.save.data.legacy) {
+//		FlxG.game._requestedState = new ModState('MainMenu2.5"');
+//	}
     for (redirectState in redirectStates.keys()) 
         if (Std.isOfType(FlxG.game._requestedState, redirectState)) 
             FlxG.game._requestedState = new ModState(redirectStates.get(redirectState));
