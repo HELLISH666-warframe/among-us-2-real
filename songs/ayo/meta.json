@@ -2,5 +2,6 @@
 	"displayName": "ayo",
 	"bpm": 150.0,
 	"icon": "ronmad",
+	"port": "ayo",
 	"color": "#F6B604"
 }

@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="bobberbutlatex" icon="" color="#6699ff" x="-550" camx="200" camy="200" holdTime="6.1" scale="0.6">
+	<anim name="singLEFT" anim="left" x="-28.333333333333336" y="78.33333333333334" fps="12"/>
+	<anim name="singRIGHT" anim="right" x="23.333333333333336" y="65" fps="12"/>
+	<anim name="singDOWN" anim="down" x="1.6666666666666667" y="58.333333333333336" fps="12"/>
+	<anim name="singUP" anim="up" x="-16.666666666666668" y="31.666666666666668" fps="12"/>
+	<anim name="shit" anim="shit" x="0" y="-5" fps="8"/>
+	<anim name="idle" anim="idle" x="0" y="61.66666666666667" loop="true"/>
+</character>

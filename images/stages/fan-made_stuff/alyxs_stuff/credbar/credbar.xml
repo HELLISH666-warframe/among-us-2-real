@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="credbar.png">
+<SubTexture name="cred0000" x="0" y="0" width="480" height="240" frameX="0" frameY="0" frameWidth="480" frameHeight="240" />
+<SubTexture name="cred0001" x="0" y="240" width="480" height="240" frameX="0" frameY="0" frameWidth="480" frameHeight="240" />
+<SubTexture name="cred0002" x="480" y="0" width="480" height="236" frameX="0" frameY="-4" frameWidth="480" frameHeight="240" />
+</TextureAtlas>

@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="fanmade_stuff/alyxs_stuff/Techne_god" icon="fanmade/alyxs_stuff/techne" color="#ffffff" x="50" y="200" camx="50" camy="50" scale="0.9">
+	<anim name="idle" anim="idle"/>
+	<anim name="singLEFT" anim="left" x="152.22222222222223" y="-18.88888888888889" fps="18"/>
+	<anim name="singRIGHT" anim="right" x="226.66666666666666" y="-56.666666666666664" fps="18"/>
+	<anim name="singUP" anim="up" x="56.666666666666664" y="62.22222222222222" fps="18"/>
+	<anim name="singDOWN" anim="down" x="100" y="-92.22222222222221" fps="18"/>
+</character>

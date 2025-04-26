@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="wind.png">
+<SubTexture name="winds0000" x="0" y="0" width="400" height="300" frameX="0" frameY="0" frameWidth="400" frameHeight="300" />
+<SubTexture name="winds0001" x="400" y="0" width="400" height="300" frameX="0" frameY="0" frameWidth="400" frameHeight="300" />
+<SubTexture name="winds0002" x="0" y="300" width="400" height="300" frameX="0" frameY="0" frameWidth="400" frameHeight="300" />
+<SubTexture name="winds0003" x="400" y="300" width="400" height="300" frameX="0" frameY="0" frameWidth="400" frameHeight="300" />
+<SubTexture name="winds0004" x="800" y="0" width="400" height="300" frameX="0" frameY="0" frameWidth="400" frameHeight="300" />
+<SubTexture name="winds0005" x="800" y="300" width="400" height="300" frameX="0" frameY="0" frameWidth="400" frameHeight="300" />
+<SubTexture name="winds0006" x="0" y="600" width="400" height="300" frameX="0" frameY="0" frameWidth="400" frameHeight="300" />
+<SubTexture name="winds0007" x="400" y="600" width="400" height="300" frameX="0" frameY="0" frameWidth="400" frameHeight="300" />
+<SubTexture name="winds0008" x="800" y="600" width="400" height="300" frameX="0" frameY="0" frameWidth="400" frameHeight="300" />
+<SubTexture name="winds0009" x="0" y="900" width="400" height="300" frameX="0" frameY="0" frameWidth="400" frameHeight="300" />
+<SubTexture name="winds0010" x="400" y="900" width="400" height="300" frameX="0" frameY="0" frameWidth="400" frameHeight="300" />
+<SubTexture name="winds0011" x="800" y="900" width="400" height="300" frameX="0" frameY="0" frameWidth="400" frameHeight="300" />
+</TextureAtlas>

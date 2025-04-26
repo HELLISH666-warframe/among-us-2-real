@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="fanmade_stuff/alyxs_stuff/conall_power" icon="fanmade/alyxs_stuff/power_conall" color="#0078ff" x="-950" y="-170" camx="921" camy="360" scale="0.9">
+	<anim name="singLEFT" anim="left" x="-768.8888888888889" y="-361.1111111111111" fps="12"/>
+	<anim name="idle" anim="idle" x="-870" y="-377.77777777777777" fps="16"/>
+	<anim name="singDOWN" anim="down" x="-824.4444444444445" y="-472.22222222222223" fps="12"/>
+	<anim name="singUP" anim="up" x="-853.3333333333333" y="-320" fps="12"/>
+	<anim name="singRIGHT" anim="right" x="-978.8888888888889" y="-437.77777777777777" fps="12"/>
+</character>

@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="overload" icon="power_conall" color="#0078ff" x="-750" y="-150" camx="921" camy="360" scale="0.9">
+	<anim name="singLEFT" anim="left" x="-580" y="-338.88888888888886" fps="12"/>
+	<anim name="idle" anim="idle" x="-681.1111111111111" y="-355.55555555555554" fps="16"/>
+	<anim name="singDOWN" anim="down" x="-634.4444444444445" y="-448.88888888888886" fps="12"/>
+	<anim name="singUP" anim="up" x="-640" y="-176.66666666666666" fps="12"/>
+	<anim name="singRIGHT" anim="right" x="-792.2222222222222" y="-414.44444444444446" fps="12"/>
+</character>

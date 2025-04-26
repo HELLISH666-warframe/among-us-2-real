@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="rainParticles.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="snow60000" x="24" y="0" width="9" height="8" frameX="0" frameY="0" frameWidth="9" frameHeight="8"/>
+	<SubTexture name="snow50000" x="13" y="0" width="11" height="12" frameX="-1" frameY="0" frameWidth="12" frameHeight="12"/>
+	<SubTexture name="snow40000" x="0" y="12" width="9" height="9" frameX="-1" frameY="-1" frameWidth="11" frameHeight="11"/>
+	<SubTexture name="snow30000" x="9" y="12" width="9" height="9" frameX="-1" frameY="-1" frameWidth="11" frameHeight="11"/>
+	<SubTexture name="snow20000" x="0" y="0" width="13" height="12" frameX="-1" frameY="-1" frameWidth="15" frameHeight="14"/>
+	<SubTexture name="snow10000" x="24" y="8" width="7" height="7" frameX="1" frameY="1" frameWidth="5" frameHeight="5"/>
+</TextureAtlas>

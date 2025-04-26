@@ -1,0 +1,13 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.6" name="swas" folder="stages/b-side-fanmade/" startCamPosY="600" startCamPosX="1000">
+	<sprite name="sky" x="-750" y="-200" sprite="Blizzard_foggy_sky" scroll="1" scale="0.8" />
+	<sprite name="city" x="-750" y="-200" sprite="Blizzard_city" scroll="1" scale="0.8" />
+	<sprite name="Blizzard_back_mountain" x="-750" y="-200" sprite="Blizzard_back_mountain" scroll="1" scale="0.8" />
+	<sprite name="Blizzard_middle_mountain" x="-750" y="-200" sprite="Blizzard_middle_mountain" scroll="1" scale="0.8" />
+	<sprite name="Blizzard_front_mountain" x="-750" y="-200" sprite="Blizzard_front_mountain" scroll="1" scale="0.8" />
+	<sprite name="ice" x="-750" y="-200" sprite="ice" scroll="1" scale="0.8" />
+	<sprite name="front" x="-750" y="-200" sprite="front" scroll="1" scale="0.8" />
+	<girlfriend />
+	<dad  x="-250" y="100"  camxoffset="600" camyoffset="-100"/>
+	<boyfriend  x="850" y="200" camxoffset="0" camyoffset="-100" />
+</stage>

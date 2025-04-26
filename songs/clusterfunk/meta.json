@@ -2,5 +2,6 @@
 	"displayName": "cluster-funk",
 	"bpm": 140.0,
 	"icon": "gdron",
+	"port": "clusterfunk",
 	"color": "#0df010"
 }

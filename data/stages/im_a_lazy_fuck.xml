@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.7" name="blizz" folder="stages/blizz" startCamPosY="600" startCamPosX="1000">
+	<sprite name="sky" x="-600" y="-650" sprite="ss_sky" scroll="0.9" scale="1"  />
+	<sprite name="clouds"  x="1" y="-400" sprite="ss_clouds" scroll="0.9" />
+	<sprite name="ice" x="-700" y="-900" sprite="ss_iciclesbehind" scroll="0.9" />
+	<sprite name="ice_front" x="-700" y="-900" sprite="ss_iciclesnbulb" scroll="0.9"/>
+	<sprite name="satan" x="-100" y="-400" sprite="ss_pentagram" scale="1.2" scroll="0.9" />
+	<sprite name="GROUND" x="-750" y="-400" sprite="ss_ground" scroll="1" />
+</stage>

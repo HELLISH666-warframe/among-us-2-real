@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="artist god.png">
+	<!-- Created with Adobe Animate version 23.0.2.103 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="color cum 20000" x="0" y="0" width="436" height="417" frameX="-1395" frameY="-496" frameWidth="3494" frameHeight="3293"/>
+	<SubTexture name="color cum 20001" x="436" y="0" width="729" height="663" frameX="-1255" frameY="-423" frameWidth="3494" frameHeight="3293"/>
+	<SubTexture name="color cum 20002" x="1165" y="0" width="1207" height="1287" frameX="-1146" frameY="-93" frameWidth="3494" frameHeight="3293"/>
+	<SubTexture name="color cum 20003" x="2372" y="0" width="1454" height="1302" frameX="-990" frameY="-45" frameWidth="3494" frameHeight="3293"/>
+	<SubTexture name="color cum 20004" x="3826" y="0" width="2017" height="1389" frameX="-699" frameY="0" frameWidth="3494" frameHeight="3293"/>
+	<SubTexture name="color cum 20005" x="0" y="1389" width="2460" height="1738" frameX="-468" frameY="-96" frameWidth="3494" frameHeight="3293"/>
+	<SubTexture name="color cum 20006" x="2460" y="1389" width="2742" height="2098" frameX="-329" frameY="-211" frameWidth="3494" frameHeight="3293"/>
+	<SubTexture name="color cum 20007" x="5202" y="1389" width="2941" height="2354" frameX="-130" frameY="-272" frameWidth="3494" frameHeight="3293"/>
+	<SubTexture name="color cum 20008" x="0" y="3743" width="3298" height="2149" frameX="0" frameY="-719" frameWidth="3494" frameHeight="3293"/>
+	<SubTexture name="color cum 20009" x="3298" y="3743" width="3477" height="2462" frameX="-17" frameY="-831" frameWidth="3494" frameHeight="3293"/>
+	<SubTexture name="color cum 20010" x="6775" y="3743" width="0" height="0" frameX="105" frameY="471" frameWidth="3494" frameHeight="3293"/>
+</TextureAtlas>

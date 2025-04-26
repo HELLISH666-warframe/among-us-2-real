@@ -10,11 +10,12 @@ public var showCredits:Bool = true;
 // showCredits = (PlayState?.instance?.SONG?.meta?.customValues?.showCredits ?? showCredits);
 
 var curSong:String = PlayState.instance.SONG.meta.name;
+var diff:String = PlayState.difficulty;
 var credits:FlxText;
 var creditBG:FlxSprite;
 function postCreate() {
 // init shit bruh
-var creditPath = Paths.file("songs/" + curSong + "/credits.txt");
+var creditPath = Paths.file("songs/" + curSong + "/credits-" + diff + ".txt");
 var creditText = "ItsLJcool stole the credits";
 if (Assets.exists(creditPath)) creditText = Assets.getText(creditPath);
 

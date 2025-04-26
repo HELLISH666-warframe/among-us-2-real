@@ -2,5 +2,6 @@
 	"displayName": "difficult-powers",
 	"bpm": 340.0,
 	"icon": "tgt-sonic",
+	"port": "difficult-powers",
 	"color": "#F6B604"
 }

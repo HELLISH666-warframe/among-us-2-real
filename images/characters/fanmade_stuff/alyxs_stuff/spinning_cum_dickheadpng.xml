@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="spinning cum dickheadpng.png">
+	<!-- Created with Adobe Animate version 24.0.0.305 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="spining cum dickhead0000" x="0" y="0" width="485" height="647" frameX="-12" frameY="0" frameWidth="519" frameHeight="647"/>
+	<SubTexture name="spining cum dickhead0001" x="485" y="0" width="519" height="637" frameX="0" frameY="-3" frameWidth="519" frameHeight="647"/>
+	<SubTexture name="spining cum dickhead0002" x="1004" y="0" width="456" height="613" frameX="-30" frameY="-10" frameWidth="519" frameHeight="647"/>
+	<SubTexture name="spining cum dickhead0003" x="0" y="647" width="413" height="596" frameX="-55" frameY="-18" frameWidth="519" frameHeight="647"/>
+	<SubTexture name="spining cum dickhead0004" x="413" y="647" width="446" height="579" frameX="-38" frameY="-33" frameWidth="519" frameHeight="647"/>
+	<SubTexture name="spining cum dickhead0005" x="0" y="647" width="413" height="596" frameX="-55" frameY="-18" frameWidth="519" frameHeight="647"/>
+	<SubTexture name="spining cum dickhead0006" x="1004" y="0" width="456" height="613" frameX="-30" frameY="-10" frameWidth="519" frameHeight="647"/>
+	<SubTexture name="spining cum dickhead0007" x="485" y="0" width="519" height="637" frameX="0" frameY="-3" frameWidth="519" frameHeight="647"/>
+</TextureAtlas>

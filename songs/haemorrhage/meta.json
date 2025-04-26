@@ -1,8 +1,7 @@
 {
-    "displayName": "Haemorrhage",
-    "bpm": 150.0,
-    "icon": "dripron",
-    "color": "#9271FD",
-    "coopAllowed": true,
-    "opponentModeAllowed": true
+	"displayName": "haemorrhage",
+	"bpm": 170.0,
+	"icon": "dripron",
+	"port": "haemorrhage",
+	"color": "#000000"
 }

@@ -1,6 +1,7 @@
 {
 	"displayName": "fardventure",
 	"bpm": 160.0,
-	"icon": "sonic",
+	"icon": "icon-sonic",
+	"port": "fardventure",
 	"color": "#F6B604"
 }

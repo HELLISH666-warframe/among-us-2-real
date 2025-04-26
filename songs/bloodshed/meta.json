@@ -2,5 +2,6 @@
 	"displayName": "Bloodshed",
 	"bpm": 170.0,
 	"icon": "hellron",
+	"port": "bloodshed",
 	"color": "#000000"
 }

@@ -1,0 +1,5 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="cutoffPP" icon="icon-K" color="#ffffff" x="50" y="200" flipX="true" camx="50" camy="50" scale="0.9">
+	<anim name="idle" anim="cutoffPP" fps="16"/>
+</character>

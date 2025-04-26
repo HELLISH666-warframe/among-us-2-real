@@ -2,5 +2,6 @@
     "displayName": "trouble",
     "bpm": 250.0,
     "icon": "ron-classic",
+    "port": "trouble",
     "color": "#9271FD"
 }

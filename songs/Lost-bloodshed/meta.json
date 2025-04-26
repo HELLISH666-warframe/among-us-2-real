@@ -1,1 +1,7 @@
-null
+{
+	"displayName": "Lost-bloodshed",
+	"bpm": 100.0,
+	"icon": "hellron",
+	"port": "lost-bloodshed",
+	"color": "#F00000"
+}

@@ -2,5 +2,6 @@
 	"displayName": "trojan-virus",
 	"bpm": 180.0,
 	"icon": "ronpower",
+	"port": "trojan-virus",
 	"color": "#F6B604"
 }

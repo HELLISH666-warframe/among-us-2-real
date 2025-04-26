@@ -2,5 +2,6 @@
     "displayName": "Triad",
     "bpm": 150.0,
     "icon": "majin",
+    "port": "triad",
     "color": "#9271FD"
 }

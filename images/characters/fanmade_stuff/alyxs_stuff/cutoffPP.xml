@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cutoffPP.png">
+	<!-- Created with Adobe Animate version 24.0.4.28 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="cutoffPP0000" x="0" y="0" width="1282" height="1658" frameX="-334" frameY="-95" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0001" x="1282" y="0" width="1197" height="1716" frameX="-395" frameY="0" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0002" x="2479" y="0" width="1685" height="1735" frameX="-41" frameY="-65" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0003" x="4164" y="0" width="1640" height="1748" frameX="-112" frameY="-30" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0004" x="5804" y="0" width="1691" height="1781" frameX="0" frameY="-18" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0005" x="0" y="1781" width="1129" height="1770" frameX="-501" frameY="-22" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0006" x="1129" y="1781" width="1161" height="1734" frameX="-456" frameY="-170" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0007" x="2290" y="1781" width="999" height="1594" frameX="-464" frameY="-340" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0008" x="3289" y="1781" width="849" height="1245" frameX="-530" frameY="-598" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0009" x="4138" y="1781" width="786" height="1160" frameX="-585" frameY="-645" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0010" x="4924" y="1781" width="864" height="1257" frameX="-518" frameY="-521" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0011" x="5788" y="1781" width="736" height="1366" frameX="-643" frameY="-412" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0012" x="6524" y="1781" width="685" height="1401" frameX="-691" frameY="-377" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0013" x="7209" y="1781" width="667" height="1398" frameX="-695" frameY="-380" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0014" x="0" y="3551" width="665" height="1404" frameX="-697" frameY="-374" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0015" x="665" y="3551" width="711" height="1467" frameX="-654" frameY="-311" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0016" x="1376" y="3551" width="800" height="1462" frameX="-562" frameY="-316" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0017" x="2176" y="3551" width="757" height="1487" frameX="-603" frameY="-291" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0018" x="2933" y="3551" width="768" height="1487" frameX="-591" frameY="-291" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0019" x="3701" y="3551" width="771" height="1487" frameX="-590" frameY="-291" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0020" x="4472" y="3551" width="767" height="1494" frameX="-590" frameY="-284" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0021" x="5239" y="3551" width="771" height="1494" frameX="-590" frameY="-284" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0022" x="6010" y="3551" width="766" height="1495" frameX="-589" frameY="-283" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0023" x="6776" y="3551" width="771" height="1495" frameX="-589" frameY="-283" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0024" x="0" y="5046" width="675" height="1420" frameX="-684" frameY="-358" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0025" x="675" y="5046" width="779" height="1495" frameX="-581" frameY="-283" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0026" x="1454" y="5046" width="927" height="1667" frameX="-433" frameY="-111" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0027" x="2381" y="5046" width="916" height="1668" frameX="-444" frameY="-110" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0028" x="3297" y="5046" width="955" height="1535" frameX="-405" frameY="-244" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0029" x="4252" y="5046" width="998" height="1280" frameX="-359" frameY="-498" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0030" x="5250" y="5046" width="1003" height="1282" frameX="-357" frameY="-496" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0031" x="6253" y="5046" width="1007" height="1278" frameX="-349" frameY="-500" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0032" x="7260" y="5046" width="897" height="1276" frameX="-461" frameY="-503" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0033" x="6253" y="5046" width="1007" height="1278" frameX="-349" frameY="-500" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0034" x="7260" y="5046" width="897" height="1276" frameX="-461" frameY="-503" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0035" x="6253" y="5046" width="1007" height="1278" frameX="-349" frameY="-500" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0036" x="7260" y="5046" width="897" height="1276" frameX="-461" frameY="-503" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0037" x="6253" y="5046" width="1007" height="1278" frameX="-349" frameY="-500" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0038" x="7260" y="5046" width="897" height="1276" frameX="-461" frameY="-503" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0039" x="6253" y="5046" width="1007" height="1278" frameX="-349" frameY="-500" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0040" x="7260" y="5046" width="897" height="1276" frameX="-461" frameY="-503" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0041" x="6253" y="5046" width="1007" height="1278" frameX="-349" frameY="-500" frameWidth="1752" frameHeight="1934"/>
+	<SubTexture name="cutoffPP0042" x="7260" y="5046" width="897" height="1276" frameX="-461" frameY="-503" frameWidth="1752" frameHeight="1934"/>
+</TextureAtlas>

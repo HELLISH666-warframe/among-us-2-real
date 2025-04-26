@@ -1,0 +1,14 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.8" folder="stages/fan-made_stuff/alyxs_stuff">
+   	<sprite name="tro-jan_behind" x="-800" y="-500" sprite="trojo/tro-jan_behind" scroll="1" />
+   	<sprite name="tro-jan_dbg" x="-800" y="100" sprite="trojo/tro-jan_dbg" scroll="1"/>
+     <sprite name="glitchybg" x="300" y="-400" sprite="trojo/glitchybg" scroll="1" type="loop"   scale="6"   />
+         <anim name="glitchybg" anim="ladygaga" loop="true"/>
+   	<sprite name="windowblock" x="-800" y="550" sprite="trojo/windowblock"  scale="1.1" scroll="1"/>
+   	<dad />
+   	<boyfriend />
+	<sprite name="dead" x="-800" y="0" sprite="dead"  scale="1.1" scroll="1"/>
+	<sprite name="window" x="-800" y="550" sprite="trojo/window"  scale="1.1" scroll="1"/>
+	<sprite name="window2" x="-800" y="550" sprite="trojo/window"  scale="1.1" scroll="1"/>
+	<sprite name="window3" x="-800" y="550" sprite="trojo/window"  scale="1.1" scroll="1"/>
+</stage>

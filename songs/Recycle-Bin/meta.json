@@ -2,5 +2,6 @@
 	"displayName": "Recycle-Bin",
 	"bpm": 185.0,
 	"icon": "ron-usb",
+	"port": "file-manipulation",
 	"color": "#F6B604"
 }

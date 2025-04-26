@@ -6,20 +6,11 @@ import flixel.addons.display.FlxBackdrop;
 import flixel.effects.FlxFlicker;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.group.FlxGroup.FlxTypedGroup;
-import flixel.text.FlxTextBorderStyle;
-import flixel.text.FlxText;
-import flixel.tweens.FlxEase;
-import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import lime.app.Application;
-import StringTools;
-import funkin.menus.ModSwitchMenu;
+import flixel.text.FlxTextBorderStyle;
 import funkin.options.OptionsMenu;
-
-#if windows
-import Discord.DiscordClient;
-#end
 
 // cyber can we try to make the main menu better plz -ekical
 // yea but how? -cyber
@@ -32,7 +23,8 @@ import Discord.DiscordClient;
 // hi -sz
 // hi -cyber
 	var curSelected:Int = 0;
-	var menuItems:FlxTypedGroup<FlxSprite> = [];
+
+	var menuItems:FlxTypedGroup<FlxSprite>;
 
 	#if !switch
 	var optionShit:Array<String> = ['story mode', 'freeplay', 'options', 'credits'];
@@ -62,34 +54,30 @@ import Discord.DiscordClient;
 
 	public static var b:Bool = false;
 
-	override function postCreate()
+	override function create()
 	{
-		#if windows
-		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
-		#end
 		
-		var bgTex = 'menuSunset';
-		var sunTex = 'menuSun';
+		var bgTex = 'menus/2.5/menuSunset';
+		var sunTex = 'menus/2.5/menuSun';
 		var alphaTex = 1;
-		var cityTex = 'menuCity';
-		var cityBTex = 'menuCityBack';
+		var cityTex = 'menus/2.5/menuCity';
+		var cityBTex = 'menus/2.5/menuCityBack';
 
 		if (!FlxG.sound.music.playing)
 		{
-			FlxG.sound.playMusic(Paths.music('freakyMenu2.5'));
+			FlxG.sound.playMusic(Paths.music('freakyMenu'));
 		}
 
 		persistentUpdate = persistentDraw = true;
 
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menus/2.5/menuSunset'));
+		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image(bgTex));
 		bg.scrollFactor.set();
 		bg.updateHitbox();
 		bg.screenCenter();
 		add(bg);
 		
 		var sun:FlxSprite = new FlxSprite();
-		sun.frames = Paths.getSparrowAtlas('menus/2.5/menuSun');
+		sun.frames = Paths.getSparrowAtlas(sunTex);
 		sun.scrollFactor.set();
 		sun.animation.addByPrefix('sun', 'sun', 2, true);
 		sun.antialiasing = true;
@@ -104,11 +92,11 @@ import Discord.DiscordClient;
 		cloud.scrollFactor.set(0.1);
 		add(cloud);
 		
-		city2 = new FlxBackdrop(Paths.image('menus/2.5/menuCityBack'), 32, 0, true, true, 0, -250);
+		city2 = new FlxBackdrop(Paths.image(cityBTex), 32, 0, true, true, 0, -250);
 		city2.scrollFactor.set(0.125);
 		add(city2);
 		
-		city = new FlxBackdrop(Paths.image('menus/2.5/menuCity'), 32, 0, true, true, 0, -250);
+		city = new FlxBackdrop(Paths.image(cityTex), 32, 0, true, true, 0, -250);
 		city.scrollFactor.set(0.2);
 		add(city);
 		
@@ -117,7 +105,7 @@ import Discord.DiscordClient;
 		road.scrollFactor.set();
 		road.animation.addByPrefix('road instance 1', 'road instance 1', 24, true);
 		road.antialiasing = true;
-		road.screenCenter();
+		road.screenCenter(FlxAxes.X);
 		road.x += 130;
 		add(road);
 		road.animation.play('road instance 1');
@@ -135,11 +123,6 @@ import Discord.DiscordClient;
 		therock.y += 0;
 		therock.alpha = 0;
 		add(therock);
-		
-		if(FlxG.save.data.antialiasing)
-			{
-				bg.antialiasing = true;
-			}
 
 		camFollow = new FlxObject(0, 0, 1, 1);
 		add(camFollow);
@@ -161,6 +144,7 @@ import Discord.DiscordClient;
 		lines.blend = BlendMode.OVERLAY;
 		add(lines);
 
+		//menuItems = new FlxTypedGroup<FlxSprite>();
 		menuItems = new FlxTypedGroup();
 		add(menuItems);
 
@@ -168,13 +152,13 @@ import Discord.DiscordClient;
 
 		for (i in 0...optionShit.length)
 		{
-			public var menuItem:FlxSprite = new FlxSprite(40, FlxG.height * 1.6);
+			var menuItem:FlxSprite = new FlxSprite(40, FlxG.height * 1.6);
 			menuItem.frames = tex;
 			menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
 			menuItem.animation.play('idle');
 			menuItem.setGraphicSize(Std.int(menuItem.width * 0.95));
-			menuItems.ID = i;
+			menuItem.ID = i;
 			menuItems.add(menuItem);
 			menuItem.scrollFactor.set();
 			if(FlxG.save.data.antialiasing)
@@ -197,42 +181,19 @@ import Discord.DiscordClient;
 
 		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, gameVer +  (Main.watermarks ? " FNF - " + kadeEngineVer + "" : ""), 12);
 		versionShit.scrollFactor.set();
-		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, 'LEFT', FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, "LEFT", FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
 
-		// NG.core.calls.event.logEvent('swag').send();
-
-
-/*		if (FlxG.save.data.dfjk)
-			controls.setKeyboardScheme(KeyboardScheme.Solo, true);
-		else
-			controls.setKeyboardScheme(KeyboardScheme.Duo(true), true);
-*/
-		changeItem();
-
-//		super.create();
+		changeItem(0);
 	}
 
 	var selectedSomethin:Bool = false;
 
 	override function update(elapsed:Float)
 	{
-		if (FlxG.keys.justPressed.P)
-            FlxG.switchState(new OptionsMenu());
-		if (FlxG.keys.justPressed.SEVEN) {
-			persistentUpdate = false;
-			persistentDraw = true;
-			import funkin.editors.EditorPicker;
-			openSubState(new EditorPicker());
-		}
-		if (FlxG.keys.justPressed.TAB) {
-			openSubState(new ModSwitchMenu());
-			persistentUpdate = false;
-			persistentDraw = true;
-		}
-        if (FlxG.keys.justPressed.ANY)
+        /*if (FlxG.keys.justPressed.ANY)
 			{
-				var curKey = FlxG.keys.justPressed()[0].ID.toString();
+				var curKey = FlxG.keys.getIsDown()[0].ID.toString();
 	
 				if (neededCode.contains(curKey) && neededCode[codeInt] == curKey)
 				{
@@ -245,7 +206,7 @@ import Discord.DiscordClient;
 					code = '';
 					codeInt = 0;
 				}
-			}
+			}*/
 			
 			if (code == 'BRO')
 			{
@@ -271,13 +232,13 @@ import Discord.DiscordClient;
 		if (!selectedSomethin)
 		{
 
-			if (FlxG.keys.justPressed.UP)
+			if (controls.UP_P)
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'));
 				changeItem(-1);
 			}
 
-			if (FlxG.keys.justPressed.DOWN)
+			if (controls.DOWN_P)
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'));
 				changeItem(1);
@@ -313,14 +274,6 @@ import Discord.DiscordClient;
 						}
 						else
 						{
-							if (FlxG.save.data.flashing)
-							{
-								FlxFlicker.flicker(spr, 1, 0.06, false, false, function(flick:FlxFlicker)
-								{
-									goToState();
-								});
-							}
-							else
 							{
 								new FlxTimer().start(1, function(tmr:FlxTimer)
 								{
@@ -332,8 +285,6 @@ import Discord.DiscordClient;
 				}
 			}
 		}
-
-//		super.update(elapsed);
 	}
 	
 	function goToState()
@@ -347,12 +298,9 @@ import Discord.DiscordClient;
 				trace("Story Menu Selected");
 				b = false;
 			case 'freeplay':
-				FlxG.switchState(new MasterPlayState());
-
+				FlxG.switchState(new ModState('2.5/MasterFreeplayState_2.5'));
 				trace("Freeplay Menu Selected");
-
-			case 'options':
-				FlxG.switchState(new OptionsMenu());
+			case 'options': FlxG.switchState(new OptionsMenu());
 			case 'b-side':
 				FlxG.switchState(new BSIDEState());
 				trace("b");
@@ -361,28 +309,25 @@ import Discord.DiscordClient;
 				FlxG.switchState(new CreditsState());
 		}
 	}
-
-	function changeItem(huh:Int = 0)
+function changeItem(huh:Int = 0)
+{
+	if (finishedFunnyMove)
 	{
-		if (finishedFunnyMove)
-		{
-			curSelected += huh;
+		curSelected += huh;
 
-			if (curSelected >= menuItems.length)
-				curSelected = 0;
-			if (curSelected < 0)
-				curSelected = menuItems.length - 1;
-		}
-		menuItems.forEach(function(spr:FlxSprite)
-		{
-			spr.animation.play('idle');
-
-			if (spr.ID == curSelected && finishedFunnyMove)
-			{
-				spr.animation.play('selected');
-				//camFollow.setPosition(spr.getGraphicMidpoint().x, spr.getGraphicMidpoint().y);
-			}
-
-			spr.updateHitbox();
-		});
+		if (curSelected >= menuItems.length)
+			curSelected = 0;
+		if (curSelected < 0)
+			curSelected = menuItems.length - 1;
 	}
+	menuItems.forEach(function(spr:FlxSprite)
+	{
+		spr.animation.play('idle');
+
+		if (spr.ID == curSelected && finishedFunnyMove)
+		{
+			spr.animation.play('selected');
+		}
+		spr.updateHitbox();
+	});
+}

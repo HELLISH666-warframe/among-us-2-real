@@ -1,1 +1,7 @@
-null
+{
+	"displayName": "scrub-of-the-day",
+	"bpm": 150.0,
+	"icon": "bijuuron",
+	"port": "bijuu",
+	"color": "#F6B604"
+}

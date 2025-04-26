@@ -2,5 +2,6 @@
 	"displayName": "tutorial",
 	"bpm": 185.0,
 	"icon": "gf",
+	"port": "tutorial",
 	"color": "#F6B604"
 }

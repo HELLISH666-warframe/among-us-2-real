@@ -1,0 +1,8 @@
+{
+	"displayName": "backdoor",
+	"bpm": 150.0,
+	"icon": "ronpower",
+	"color": "#F6B604",
+	"coopAllowed": true,
+	"opponentModeAllowed": true
+}

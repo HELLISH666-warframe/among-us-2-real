@@ -38,17 +38,17 @@ function stepHit(curStep)
                 }
             }
         }
-        function postCreate(){
-                healthBarBG.angle = healthBar.angle =90;
-                iconP2.angle = iconP1.angle = 90;
-                iconP2.x = iconP1.x = 90;
-                rightBar.angle = 90;
-                leftBar.angle = 90;
-                comboGroup.angle = 90;
-                hpBorder.angle = 90;
-                healthBar.x = 600;
-                healthBarBG.x = 600;
-                hpBorder.x = 1000;
-                leftBar.x = 1000;
-                rightBar.x = 1000;
-        }
+function postCreate(){
+    healthBarBG.angle = healthBar.angle =90;
+    iconP2.angle = iconP1.angle = 90;
+    iconP2.x = iconP1.x = 90;
+    rightBar.angle = 90;
+    leftBar.angle = 90;
+    comboGroup.angle = 90;
+    hpBorder.angle = 90;
+    healthBar.x = 600;
+    healthBarBG.x = 600;
+    hpBorder.x = 1000;
+    leftBar.x = 1000;
+    rightBar.x = 1000;
+}

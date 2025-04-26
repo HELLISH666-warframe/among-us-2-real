@@ -1,0 +1,5 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="spinning_cum_dickheadpng" icon="Apollo" color="#ffffff" x="50" y="100" camx="50" camy="-50" scale="1.1">
+	<anim name="spinningdick" anim="spining cum dickhead" loop="true"/>
+</character>

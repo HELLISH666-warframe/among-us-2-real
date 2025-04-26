@@ -1,6 +1,7 @@
 {
 	"displayName": "withered-tweaked",
     "bpm": 130.0,
-	"icon": "ronslightly",
+	"icon": "ronslightly-classic",
+	"port": "trouble",
 	"color": "#F6B604"
 }

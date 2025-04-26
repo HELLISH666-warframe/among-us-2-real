@@ -1,0 +1,10 @@
+COMPOSER(s)
+DeepFriedBolonese
+
+CHARTER(s)
+Anima
+
+ARTIST(s)
+Knocks
+Seezee
+Wildythomas

@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="fanmade_stuff/alyxs_stuff/flying_tech" icon="fanmade/alyxs_stuff/tech" color="#ffffff" x="-50" y="100" camx="50" camy="50" scale="0.9">
+	<anim name="idle" anim="idle"/>
+	<anim name="singLEFT" anim="left" x="142.22222222222223" y="-95.55555555555556" fps="18"/>
+	<anim name="singRIGHT" anim="right" x="-242.22222222222223" y="11.11111111111111" fps="18"/>
+	<anim name="singUP" anim="up" x="24.444444444444443" y="132.22222222222223" fps="18"/>
+	<anim name="singDOWN" anim="down" x="-43.333333333333336" y="-150" fps="18"/>
+</character>

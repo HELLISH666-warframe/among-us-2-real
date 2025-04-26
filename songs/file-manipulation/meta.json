@@ -2,5 +2,6 @@
 	"displayName": "file-manipulation",
 	"bpm": 230.0,
 	"icon": "ateloron",
+	"port": "file-manipulation",
 	"color": "#F6B604"
 }

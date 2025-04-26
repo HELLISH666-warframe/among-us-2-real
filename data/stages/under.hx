@@ -17,7 +17,7 @@ Estatic.screenCenter();
 Estatic.alpha = 0;
 function postCreate() {
 	add(Estatic);
-	FlxTween.tween(Estatic, {"scale.x":1.2,"scale.y":1.2}, Conductor.crochet / 1000, {ease: FlxEase.quadInOut, type: FlxTween.PINGPONG});}
+	FlxTween.tween(Estatic, {"scale.x":3.2,"scale.y":1.2}, Conductor.crochet / 1000, {ease: FlxEase.quadInOut, type: FlxTween.PINGPONG});}
 override function update(elapsed:Float){time += elapsed;
 	chrom.data.rOffset.value = [0.009*Math.sin(time)];
 	chrom.data.bOffset.value = [-0.009*Math.sin(time)];
@@ -33,8 +33,9 @@ function create() {
             rainbowscreen.y += (Math.cos(time)/5)+9;
             tmr.reset(0.005);
         });
-        insert(members.indexOf(dad), rainbowscreen);
-        add(rainbowscreen);
+        insert(1, rainbowscreen);
+        rainbowscreen.color = 0x1f6b2b;
+
         if (FlxG.save.data.fish){FlxG.camera.addShader(fish);
         fish.data.MAX_POWER.value = [0.2];}
         if (FlxG.save.data.chrom) {FlxG.camera.addShader(chrom);chrom.data.rOffset.value = [1/2];

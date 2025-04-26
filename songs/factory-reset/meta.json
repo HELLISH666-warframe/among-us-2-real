@@ -1,0 +1,7 @@
+{
+	"displayName": "factory-reset",
+	"bpm": 265.0,
+	"icon": "infectedron-classic",
+	"port": "file-manipulation",
+	"color": "#F02098"
+}

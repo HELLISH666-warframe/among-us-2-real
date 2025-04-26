@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="bobber" icon="" color="#6699ff" x="-200" camx="200" camy="200" holdTime="6.1" scale="0.6">
+	<anim name="idle" anim="idle" fps="10"/>
+	<anim name="singLEFT" anim="left" x="-11.666666666666668" y="-5" fps="12"/>
+	<anim name="singRIGHT" anim="right" x="6.666666666666667" y="-1.6666666666666667" fps="12"/>
+	<anim name="singDOWN" anim="down" x="1.6666666666666667" y="3.3333333333333335" fps="12"/>
+	<anim name="singUP" anim="up" x="0" y="-5" fps="12"/>
+</character>

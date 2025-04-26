@@ -1,6 +1,7 @@
 {
 	"displayName": "wasted",
-    "bpm": 130.0,
+    "bpm": 210.0,
 	"icon": "ronslightly",
-	"color": "#FFA500"
+	"port": "wasted",
+	"color": "#F6B604"
 }

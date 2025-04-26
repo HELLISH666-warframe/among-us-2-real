@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="hellron-b" icon="hellron-b" color="#ffffff" y="280">
+	<anim name="idle-alt" anim="crazyg"/>
+	<anim name="idle" anim="idleg"/>
+	<anim name="singLEFT" anim="leftg" x="90" y="29"/>
+	<anim name="singRIGHT" anim="rightg" x="42" y="13"/>
+	<anim name="singUP" anim="upg" x="5" y="80"/>
+	<anim name="singDOWN" anim="downg" x="40" y="-33"/>
+</character>

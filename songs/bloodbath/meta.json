@@ -2,5 +2,6 @@
 	"displayName": "Bloodbath",
 	"bpm": 170.0,
 	"icon": "demonron",
+	"port": "bloodbath",
 	"color": "#F6B604"
 }

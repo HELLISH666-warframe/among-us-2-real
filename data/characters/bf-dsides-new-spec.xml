@@ -1,0 +1,22 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="dsidesbf" icon="icon-boyfen" color="#e455d8" y="320" flipX="true">
+	<anim name="idle" anim="BF idle dance" x="-5" y="0"/>
+	<anim name="singLEFT" anim="BF NOTE LEFT0" x="-2" y="5"/>
+	<anim name="singDOWN" anim="BF NOTE DOWN0" x="-20" y="-24"/>
+	<anim name="singUP" anim="BF NOTE UP0" x="-58" y="39"/>
+	<anim name="singRIGHT" anim="BF NOTE RIGHT0" x="-32" y="-2"/>
+	<anim name="singLEFTmiss" anim="BF NOTE LEFT MISS" x="-1" y="6"/>
+	<anim name="singDOWNmiss" anim="BF NOTE DOWN MISS" x="-13" y="-23"/>
+	<anim name="singUPmiss" anim="BF NOTE UP MISS" x="-57" y="42"/>
+	<anim name="singRIGHTmiss" anim="BF NOTE RIGHT MISS" x="-35" y="-1"/>
+	<anim name="hey" anim="BF HEY" x="-81" y="17"/>
+	<anim name="scared" anim="BF idle shaking" x="-5" y="0" loop="true"/>
+	<anim name="firstDeath" anim="BF dies" x="-53" y="-20"/>
+	<anim name="deathLoop" anim="BF Dead Loop" x="-53" y="-20" loop="true"/>
+	<anim name="deathConfirm" anim="BF Dead confirm" x="-53" y="46"/>
+	<anim name="singDOWN-alt" anim="BF NOTE DOWN DODGE" x="-84" y="4"/>
+	<anim name="singLEFT-alt" anim="BF NOTE LEFT DODGE" x="30" y="-20"/>
+	<anim name="singUP-alt" anim="BF NOTE UP DODGE" x="-27" y="38"/>
+	<anim name="singRIGHT-alt" anim="BF NOTE RIGHT DODGE" x="-158" y="1"/>
+</character>

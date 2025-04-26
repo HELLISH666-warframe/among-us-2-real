@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="fanmade_stuff/alyxs_stuff/artistshit" icon="fanmade/alyxs_stuff/tech" color="#ffffff" x="50" y="200" camx="50" camy="50" scale="0.9">
+	<anim name="idle" anim="idle"/>
+	<anim name="singLEFT" anim="left" x="231.11111111111111" y="-62.22222222222222" fps="18"/>
+	<anim name="singRIGHT" anim="right" x="-45.55555555555556" y="-38.888888888888886" fps="18"/>
+	<anim name="singUP" anim="up" x="24.444444444444443" y="143.33333333333334" fps="18"/>
+	<anim name="singDOWN" anim="down" x="-10" y="-72.22222222222221" fps="18"/>
+</character>

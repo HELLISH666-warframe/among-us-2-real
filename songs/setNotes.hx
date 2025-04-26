@@ -60,6 +60,9 @@ function create(){
         case 'Bloodbath':{
             noteName.text = 'demon';
         }
+        case 'ron-bsides':{
+            noteName.text = 'evik';
+        }
         case 'ron-dsides':{
             noteName.text = 'conall';
         }

@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="fanmade_stuff/alyxs_stuff/Apollo" icon="fanmade/alyxs_stuff/pApollo" color="#ffffff" x="50" y="100" camx="50" camy="50" scale="0.9">
+	<anim name="singLEFT" anim="left" x="104.44444444444444" y="0" fps="18"/>
+	<anim name="singRIGHT" anim="right" x="5.555555555555555" y="2.2222222222222223" fps="18"/>
+	<anim name="singUP" anim="up" x="3.333333333333333" y="100" fps="18"/>
+	<anim name="singDOWN" anim="down" x="11.11111111111111" y="-93.33333333333333" fps="18"/>
+	<anim name="idle" anim="idle" fps="18"/>
+</character>

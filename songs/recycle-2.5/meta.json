@@ -12,5 +12,6 @@
 	"displayName": "recycle-bin-2.5",
 	"icon": "infectedron-classic",
 	"name": "recycle-2.5",
+	"port": "file-manipulation",
 	"color": "#9F9F9F"
 }

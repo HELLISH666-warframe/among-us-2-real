@@ -12,7 +12,7 @@ var icons:Map<String, Dynamic> = [
 	"discord" => "https://discord.gg/ron-874366610918473748",
 	"random" => (new ModState('MasterFreeplayState'))
 	"settings" => new OptionsMenu(),
-	"freeplay" => new FreeplayState(),
+	"freeplay" => (new ModState('MasterFreeplayState'))
 	"story mode" => "story mode is idiot",
 	"credits" => (new ModState('CreditsRon')),
 ];

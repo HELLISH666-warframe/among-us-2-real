@@ -4,7 +4,6 @@
 		"handle": "Seezee",
 		"description": "Leader, Lead Artist, Coder, Composer, Charter etc.\n\nWhen someone rushes you.",
 		"social_link": "https://youtube.com/sz553"
-
 	},
 	{
 		"name": "cyberbyte",
@@ -19,7 +18,7 @@
 		"social_link": "https://youtube.com/@kurtfan5468"
 	},
 	{
-		"name": "armandronan",
+		"name": "armand ronan",
 		"handle": "Armand Ronan",
 		"description": "Co-owner, Composer\n\nooOOOooo very scary",
 		"social_link": "https://youtube.com/c/ArmandRonan"
@@ -55,7 +54,7 @@
 		"social_link": "https://www.youtube.com/@SpiritualOsu"
 	},
 	{
-		"name": "mrstupid",
+		"name": "mr stupid",
 		"handle": "Mr.Stupid",
 		"description": "Composer\n\nhi",
 		"social_link": "https://www.youtube.com/channel/UCk_v2aq9pL3HezpLAgiVF8g"
@@ -73,7 +72,7 @@
 		"social_link": "https://youtube.com/@BII0K_"
 	},
 	{
-		"name": "zimmy",
+		"name": "DRIFTINGZIM",
 		"handle": "DriftingZim",
 		"description": "Artist\n\nI fucking love Ron fnf he's so cool",
 		"social_link": "https://twitter.com/DriftingZim"
@@ -109,7 +108,7 @@
 		"social_link": "https://www.youtube.com/c/coquers_"
 	},
 	{
-		"name": "sonicaccelerate",
+		"name": "accelerateWASTAKEN",
 		"handle": "AccelerateWasTaken",
 		"description": "Concept Artist\n\nyes I haven't done anything since v1",
 		"social_link": "https://www.youtube.com/@AccelerateWasTaken"
@@ -215,5 +214,35 @@
 		"handle": "Top 10 Awesome",
 		"description": "awesome (Composer)",
 		"social_link": "https://youtube.com/@Top10Awesome"
+	},
+	{
+		"name": "top10awesome",
+		"handle": "_chronicsilly",
+		"description": "coder\n\nmade the note skin change event!",
+		"social_link": "https://x.com/thefunguscomes"
+	},
+	{
+		"name": "azer",
+		"handle": "AZER",
+		"description": "Awesome (artist)\n\nMade the b-side and extra-side portraits.",
+		"social_link": "https://www.youtube.com/channel/UC2xqkZt5swV3H5MgcvKsFSQ"
+	},
+	{
+		"name": "cone",
+		"handle": "The Conester92",
+		"description": "Charter\n\nFinished blizzard's chart.",
+		"social_link": "https://www.youtube.com/channel/UCU5i0oX37-szCWJ4cruDiig"
+	},
+	{
+		"name": "nk",
+		"handle": "Nk839",
+		"description": "owner of the extra sides fan-mod\n\nthe fan-build sto-BORROWED some songs from vs ron extra-sides.",
+		"social_link": "https://www.youtube.com/channel/UCDcmIki2Ddoj-xc68blyFdg"
+	},
+	{
+		"name": "ear",
+		"handle": "earframe",
+		"description": "Porter\n\nHELP_MY_SPACEBAR_BROKE.",
+		"social_link": "https://four.com/"
 	}
 ]
