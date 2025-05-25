@@ -1,58 +1,71 @@
 {
-	"stage": "stage",
-	"events": [],
-	"scrollSpeed": 1,
-	"codenameChart": true,
-	"strumLines": [
+	"events": [
 		{
-			"notes": [],
-			"visible": true,
-			"strumPos": [
+			"params": [
 				0,
-				50
+				"megalovaniaron",
+				true,
+				"0,0",
+				true
 			],
-			"position": "dad",
-			"scrollSpeed": null,
-			"strumScale": 1,
-			"strumLinePos": 0.25,
-			"type": 0,
-			"characters": [
-				"dad"
-			]
+			"name": "Change Character",
+			"time": 22544.1176470588
 		},
 		{
-			"notes": [],
-			"visible": true,
-			"strumPos": [
-				0,
-				50
+			"params": [
+				1,
+				"heartlo",
+				true,
+				"0,300",
+				true
 			],
-			"position": "boyfriend",
-			"scrollSpeed": null,
-			"strumScale": 1,
-			"strumLinePos": 0.75,
-			"type": 1,
-			"characters": [
-				"bf"
-			]
+			"name": "Change Character",
+			"time": 22544.1176470588
 		},
 		{
-			"notes": [],
-			"visible": false,
-			"strumPos": [
-				0,
-				50
+			"params": [
+				1
 			],
-			"position": "girlfriend",
-			"scrollSpeed": null,
-			"strumScale": 1,
-			"strumLinePos": 0.5,
-			"type": 2,
-			"characters": [
-				"gf"
-			]
+			"name": "Camera Movement",
+			"time": 45176.4705882353
 		}
 	],
-	"meta": null,
+	"stage": "under_real",
+	"codenameChart": true,
+	"scrollSpeed": 3,
+	"strumLines": [
+		{
+			"strumScale": 1,
+			"position": "dad",
+			"notes": [],
+			"characters": [
+				"dad"
+			],
+			"type": 0,
+			"scrollSpeed": null,
+			"visible": true,
+			"strumPos": [
+				0,
+				50
+			],
+			"strumLinePos": 0.25
+		},
+		{
+			"strumScale": 1,
+			"position": "boyfriend",
+			"notes": [],
+			"characters": [
+				"bf"
+			],
+			"type": 1,
+			"scrollSpeed": null,
+			"visible": true,
+			"strumPos": [
+				0,
+				50
+			],
+			"strumLinePos": 0.75
+		}
+	],
 	"noteTypes": []
 }

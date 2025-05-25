@@ -1,0 +1,9 @@
+{
+	"params": [
+		{
+			"name": "fuck",
+			"type": "String",
+			"defaultValue": 1
+		}
+	]
+}

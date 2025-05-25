@@ -66,17 +66,14 @@ function create(){
         case 'ron-dsides':{
             noteName.text = 'conall';
         }
-        case 'Bleeding':{
-            noteName.text = 'ronhell';
-        }
-        case 'Bleeding-classic':{
-            noteName.text = 'ronhell';
-        }
-        case 'Bloodshed-classic':{
+        case 'Bleeding-classic'|'Bloodshed-classic'|'Bleeding':{
             noteName.text = 'ronhell';
         }
         case 'Bloodshed-legacy-redux':{
             noteName.text = 'demon';
+        }
+        case 'bloodlovania'|'haemorrhage'|'homicidal-lunacy':{
+            noteName.text = 'sans_assets';
         }
     }
     trace(noteName.text, PlayState.SONG.meta.displayName);

@@ -1,0 +1,19 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": false,
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"bpm": 100,
+	"difficulties": [
+		"HARD"
+	],
+	"needsVoices": true,
+	"parsedColor": -7179779,
+	"displayName": "homicidal-lunacy",
+	"icon": "hellron",
+	"name": "homicidal-lunacy",
+	"port": "haemorrhage",
+	"color": "#000000",
+	"customValues": {},
+	"version": "V2.5"
+}

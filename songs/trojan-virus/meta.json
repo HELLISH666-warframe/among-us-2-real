@@ -2,6 +2,12 @@
 	"displayName": "trojan-virus",
 	"bpm": 180.0,
 	"icon": "ronpower",
+	"difficulties": [
+		"ALT",
+		"HARD",
+		"FANMADE-D"
+	],
 	"port": "trojan-virus",
-	"color": "#F6B604"
+	"color": "#F6B604",
+	"version": "V2.5/3/Fanmade"
 }

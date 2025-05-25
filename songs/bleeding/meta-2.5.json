@@ -1,6 +1,9 @@
 {
 	"displayName": "Bleeding-2.5",
 	"bpm": 200.0,
+	"difficulties": [
+		"UNFAIR"
+	],
 	"icon": "dripron",
 	"color": "#000000"
 }

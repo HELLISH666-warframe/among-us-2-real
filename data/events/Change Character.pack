@@ -11,7 +11,6 @@ function postCreate() {
 		}
 	}
 }
-
 function onEvent(_) {
 	if (_.event.name == 'Change Character') {
 		var stuff = preloadedCharacters.pop();
@@ -32,13 +31,7 @@ function onEvent(_) {
 
 		if (_.event.params[2] || _.event.params[2] == null) {
 			if (stuff[1].opponentSide) {
-				var iconcams = iconP2.cameras;
-				remove(iconP2);
-				iconP2 = new HealthIcon(char.icon!=null?char.icon:char.curCharacter, false);
-				iconP2.y = healthBar.y - (iconP2.height / 2);
-				iconP2.cameras = iconcams;
-				iconP2.health = health;
-				insert(members.indexOf(healthBar)+1, iconP2);
+				iconP2.setIcon(char.icon!=null?char.icon:char.curCharacter);
 			} else {
 				var iconcams = iconP1.cameras;
 				remove(iconP1);

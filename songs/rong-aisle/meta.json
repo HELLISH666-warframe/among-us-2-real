@@ -2,6 +2,11 @@
 	"displayName": "rong-aisle",
 	"bpm": 160.0,
 	"icon": "rondvd",
+	"difficulties": [
+		"HARD",
+		"OG"
+	],
 	"port": "rong-aisle",
-	"color": "#F6B604"
+	"color": "#F6B604",
+	"version": "V3/Og"
 }

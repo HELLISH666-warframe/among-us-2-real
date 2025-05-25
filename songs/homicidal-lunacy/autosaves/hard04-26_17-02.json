@@ -1,0 +1,60 @@
+{
+	"events": [],
+	"stage": "stage",
+	"scrollSpeed": 3,
+	"codenameChart": true,
+	"strumLines": [
+		{
+			"notes": [
+				{
+					"id": 1,
+					"sLen": 450,
+					"time": 0,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 450,
+					"time": 450,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 600,
+					"time": 1050,
+					"type": 0
+				}
+			],
+			"position": "dad",
+			"strumScale": 1,
+			"visible": true,
+			"scrollSpeed": null,
+			"type": 0,
+			"characters": [
+				"bloodshedron"
+			],
+			"strumPos": [
+				0,
+				50
+			],
+			"strumLinePos": 0.25
+		},
+		{
+			"notes": [],
+			"position": "boyfriend",
+			"strumScale": 1,
+			"visible": true,
+			"scrollSpeed": null,
+			"type": 1,
+			"characters": [
+				"bf"
+			],
+			"strumPos": [
+				0,
+				50
+			],
+			"strumLinePos": 0.75
+		}
+	],
+	"noteTypes": []
+}

@@ -1,0 +1,78 @@
+{
+	"events": [],
+	"stage": "anti",
+	"codenameChart": true,
+	"scrollSpeed": 3.4,
+	"strumLines": [
+		{
+			"strumScale": 1,
+			"position": "dad",
+			"notes": [],
+			"characters": [
+				"hellron"
+			],
+			"type": 0,
+			"scrollSpeed": null,
+			"visible": true,
+			"strumPos": [
+				0,
+				50
+			],
+			"strumLinePos": 0.25
+		},
+		{
+			"strumScale": 1,
+			"position": "boyfriend",
+			"notes": [
+				{
+					"id": 2,
+					"sLen": 0,
+					"time": 4350,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 0,
+					"time": 4440,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 0,
+					"time": 4560,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 0,
+					"time": 4680,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 0,
+					"time": 4800,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 0,
+					"time": 4920,
+					"type": 0
+				}
+			],
+			"characters": [
+				"bf"
+			],
+			"type": 1,
+			"scrollSpeed": null,
+			"visible": true,
+			"strumPos": [
+				0,
+				50
+			],
+			"strumLinePos": 0.75
+		}
+	],
+	"noteTypes": []
+}

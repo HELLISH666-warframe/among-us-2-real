@@ -22,7 +22,7 @@ function postCreate() {
 override function update(elapsed:Float){time += elapsed;
 	chrom.data.rOffset.value = [0.009*Math.sin(time)];
 	chrom.data.bOffset.value = [-0.009*Math.sin(time)];
-    glitchShader.data.iTime.value = [-0.009*Math.sin(time)];
+    glitchShader.data.iTime.value = [(Math.cos(time)/9999)+1];
     Estatic.alpha = (((2-health)/3)+0.2);
 	vhs.data.iTime.value = [1*Math.sin(time)];}
 function create() {
@@ -60,12 +60,10 @@ function create() {
         if (FlxG.save.data.glitch) {FlxG.camera.addShader(glitchShader);}
 }
 function stepHit(curStep)
+{
+    if (curStep == 1)
     {
-        {
-            if (curStep == 1)
-                {
-                    for (i in 0...playerStrums.members.length) FlxTween.tween(playerStrums.members[i], {x: playerStrums.members[i].x - 235}, (Conductor.crochet/800), {ease: FlxEase.linear});
-                    for (i in 0...cpuStrums.members.length) FlxTween.tween(cpuStrums.members[i], {x: cpuStrums.members[i].x - 650 }, (Conductor.crochet/400), {ease: FlxEase.linear});
-                }
-            }
-        }
+        for (i in 0...playerStrums.members.length)FlxTween.tween(playerStrums.members[i],{x: playerStrums.members[i].x - 235},(Conductor.crochet/800),{ease: FlxEase.linear});
+        for (i in 0...cpuStrums.members.length)FlxTween.tween(cpuStrums.members[i],{x: cpuStrums.members[i].x - 650 },(Conductor.crochet/400),{ease: FlxEase.linear});
+    }
+}

@@ -1,0 +1,98 @@
+{
+	"events": [
+		{
+			"params": [
+				1
+			],
+			"name": "Camera Movement",
+			"time": 7950
+		}
+	],
+	"stage": "homicide",
+	"scrollSpeed": 3,
+	"codenameChart": true,
+	"strumLines": [
+		{
+			"notes": [
+				{
+					"id": 1,
+					"sLen": 337.5,
+					"time": 50,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 450,
+					"time": 512.5,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 600,
+					"time": 1075,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 600,
+					"time": 1800,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 450,
+					"time": 2550,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 150,
+					"time": 3025,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 150,
+					"time": 3287.5,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 150,
+					"time": 3537.5,
+					"type": 0
+				}
+			],
+			"position": "dad",
+			"strumScale": 1,
+			"visible": true,
+			"scrollSpeed": null,
+			"type": 0,
+			"characters": [
+				"bloodshedron"
+			],
+			"strumPos": [
+				0,
+				50
+			],
+			"strumLinePos": 0.25
+		},
+		{
+			"notes": [],
+			"position": "boyfriend",
+			"strumScale": 1,
+			"visible": true,
+			"scrollSpeed": null,
+			"type": 1,
+			"characters": [
+				"bf"
+			],
+			"strumPos": [
+				0,
+				50
+			],
+			"strumLinePos": 0.75
+		}
+	],
+	"noteTypes": []
+}

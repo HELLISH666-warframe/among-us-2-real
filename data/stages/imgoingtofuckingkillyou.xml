@@ -1,38 +1,58 @@
 <!DOCTYPE codename-engine-stage>
 <stage zoom="0.9" folder="stages">
-   	<sprite name="sadmoon" x="0" y="-1000" sprite="/fan-made_stuff/alyxs_stuff/giggad/sadmoon" scroll="0.2" scale="2.5" />
-   	<sprite name="backcity" x="0" y="-1300" sprite="/fan-made_stuff/alyxs_stuff/giggad/backcity" scroll="0.15" scale="2.5" />
-	<sprite name="kamehameha" x="0" y="-1300" sprite="/fan-made_stuff/alyxs_stuff/giggad/kamehameha" scroll="0.175" scale="2.5" />
+   	<sprite name="sadmoon" x="0" y="-600" sprite="/fan-made_stuff/alyxs_stuff/giggad/sadmoon" scrollx="0" scrolyx="1.02" scale="2.5" />
+   	<sprite name="backcity" x="0" y="-500" sprite="/fan-made_stuff/alyxs_stuff/giggad/backcity" scroll="0.15" scale="2.5" />
+	<sprite name="kamehameha" x="0" y="-3500" sprite="/fan-made_stuff/alyxs_stuff/giggad/kamehameha" scroll="0.175" scale="2.5" />
 	<sprite name="penty" x="0" y="-7000" sprite="/fan-made_stuff/alyxs_stuff/giggad/penty" scroll="0.2" scale="2.5" />
-	<sprite name="frontcity" x="-200" y="-700" sprite="/fan-made_stuff/alyxs_stuff/giggad/frontcity" scroll="0.25" scale="2.5" />
+	<sprite name="frontcity" x="0" y="-440" sprite="/fan-made_stuff/alyxs_stuff/giggad/frontcity" scroll="0.25" scale="2.5" />
 	<sprite name="building1" x="-400" y="325" sprite="/fan-made_stuff/alyxs_stuff/giggad/building1" scroll="0.4" scale="4" />
 	<sprite name="building2" x="900" y="325" sprite="/fan-made_stuff/alyxs_stuff/giggad/building2" scroll="0.4" scale="2" />
 	<sprite name="building3" x="1600" y="325" sprite="/fan-made_stuff/alyxs_stuff/giggad/building3" scroll="0.4" scale="3" />
-	<sprite name="tree3" x="-1200" y="-400" sprite="/fan-made_stuff/alyxs_stuff/giggad/tree3" scroll="0.5" scale="1" />
-	<sprite name="tree4" x="1300" y="-500" sprite="/fan-made_stuff/alyxs_stuff/giggad/tree4" scroll="0.5" scale="1" />
-	<sprite name="backhill" x="-300" y="100" sprite="/fan-made_stuff/alyxs_stuff/giggad/backhill" scroll="0.5" scale="2.5" />
-	<sprite name="tree1" x="-1000" y="-400" sprite="/fan-made_stuff/alyxs_stuff/giggad/tree1" scroll="0.8" scale="1" />
-	<sprite name="tree2" x="1600" y="-500" sprite="/fan-made_stuff/alyxs_stuff/giggad/tree2" scroll="0.8" scale="1" />
-	<sprite name="fronthill" x="-300" y="100" sprite="/fan-made_stuff/alyxs_stuff/giggad/fronthill" scroll="0.8" scale="2.5" />
-	<sprite name="hind" x="0" y="20" sprite="streetdsides/conall_bgBehind" scroll="0.8" scale="1" />
+	<sprite name="tree3" x="-1200" y="-700" sprite="/fan-made_stuff/alyxs_stuff/giggad/tree3" scroll="0.5" scale="1" />
+	<sprite name="tree4" x="1300" y="-700" sprite="/fan-made_stuff/alyxs_stuff/giggad/tree4" scroll="0.5" scale="1" />
+	<sprite name="backhill" x="0" y="300" sprite="/fan-made_stuff/alyxs_stuff/giggad/backhill" scroll="0.5" scale="2.5" />
+	<sprite name="tree1" x="-1000" y="-700" sprite="/fan-made_stuff/alyxs_stuff/giggad/tree1" scroll="0.8" scale="1" />
+	<sprite name="tree2" x="1600" y="-700" sprite="/fan-made_stuff/alyxs_stuff/giggad/tree2" scroll="0.8" scale="1" />
+	<sprite name="fronthill" x="0" y="65" sprite="/fan-made_stuff/alyxs_stuff/giggad/fronthill" scroll="0.8" scale="2.5" />
+	<sprite name="hind" x="0" y="-400" sprite="streetdsides/conall_bgBehind" scroll="0.8" scale="1" />
 	<sprite name="foreskin" x="0" y="325" sprite="/fan-made_stuff/alyxs_stuff/giggad/foreskin" scroll="1" scale="3" />
-	<sprite name="foreskinclean" x="0" y="325" sprite="/fan-made_stuff/alyxs_stuff/giggad/foreskinclean" scroll="1" scale="3" />
+	<sprite name="foreskinclean" x="-300" y="214" sprite="/fan-made_stuff/alyxs_stuff/giggad/foreskinclean" scroll="1" scale="3" />
 	<sprite name="noskin" x="0" y="325" sprite="streetdsides/conall_bg" scroll="1" scale="1" />
 	<sprite name="stone1" x="500" y="125" sprite="fan-made_stuff/alyxs_stuff/giggad/stonebit1" scroll="0.95" scale="1.25" />
 	<sprite name="stone2" x="700" y="625" sprite="fan-made_stuff/alyxs_stuff/giggad/stonebit2" scroll="0.95" scale="1.5" />
-	<sprite name="island" x="600" y="-225" sprite="fan-made_stuff/alyxs_stuff/giggad/islandboi1" scroll="1" scale="3" />
+	<sprite name="island" x="600" y="225" sprite="fan-made_stuff/alyxs_stuff/giggad/islandboi1" scroll="1" scale="3" />
 	<sprite name="island2" x="0" y="325" sprite="fan-made_stuff/alyxs_stuff/giggad/islandboi2" scroll="1" scale="3" />
+
+	<!--<sprite name="noskin" x="0" y="325" sprite="streetdsides/conall_bg" scroll="1" scale="1" />=
+	makeLuaSprite('noskin', 'bgs/newstaged/conall_bg', 0, 325);
+	setLuaSpriteScrollFactor('noskin', 1, 1);
+	setObjectOrder('noskin', 24)
+	scaleObject('noskin', 1, 1)
+	screenCenter('noskin', 'x')
+	setProperty('noskin.alpha', 0)
+	-->
+
 	<sprite name="stone3" x="0" y="325" sprite="fan-made_stuff/alyxs_stuff/giggad/stonebit3" scroll="0.95" scale="2" />
 	<sprite name="canvas" x="200" y="0" sprite="fan-made_stuff/alyxs_stuff/giggad/canvas" scroll="1" scale="3" />
 	<sprite name="canvasclean" x="200" y="0" sprite="fan-made_stuff/alyxs_stuff/giggad/canvasclean" scroll="1" scale="3" />
-	<sprite name="pentycanvas" x="200" y="0" sprite="fan-made_stuff/alyxs_stuff/giggad/pentycanvas" scroll="1" scale="2.5" />
-	<dad x="-500" y="-100" />
+	<sprite name="pentycanvas" x="280" y="200" sprite="fan-made_stuff/alyxs_stuff/giggad/pentycanvas" scroll="1" scale="2.5" />
+
+	<dad x="-500" y="-150" />
 	<boyfriend x="850" y="-150"  />	
-	<sprite name="deadly1" x="-680" y="-250" sprite="fan-made_stuff/alyxs_stuff/bloodsheddside/deadly1" scroll="1" scale="1" />
-	<sprite name="deadly2" x="-680" y="-250" sprite="fan-made_stuff/alyxs_stuff/bloodsheddside/deadly2" scroll="1" scale="1" />
-	<sprite name="grade" x="-750" y="-350" sprite="fan-made_stuff/alyxs_stuff/grade" scroll="1" scale="0.6" />
+	<sprite name="deadly1" x="-680" y="-250" sprite="fan-made_stuff/alyxs_stuff/bloodsheddside/deadly1" scroll="1"/>
+
+	<sprite name="deadly2" x="-680" y="-250" sprite="fan-made_stuff/alyxs_stuff/bloodsheddside/deadly2" scroll="1"/>
+
+	<sprite name="googoo" x="-300" y="-200" sprite="fan-made_stuff/alyxs_stuff/bloodsheddside/deadly2" scroll="1" scale="0.7" type="loop" />
+        <anim name="googoo" anim="googoogaga" loop="true" fps="4"/>
+
+	<sprite name="grade" x="-750" y="-250" sprite="fan-made_stuff/alyxs_stuff/grade" scroll="1" scale="0.6" />
+
 	<sprite name="alive" x="-1680" y="-1250" sprite="fan-made_stuff/alyxs_stuff/cum" scroll="1" scale="10" />
+	
 	<sprite name="alivefake" x="-1680" y="-1250" sprite="fan-made_stuff/alyxs_stuff/cum" scroll="1" scale="10" />
+
 	<sprite name="deadfake" x="-1680" y="-1250" sprite="fan-made_stuff/alyxs_stuff/dead" scroll="1" scale="10" />
+
 	<sprite name="dead" x="-1680" y="-1250" sprite="fan-made_stuff/alyxs_stuff/dead" scroll="1" scale="10" />
 </stage>

@@ -1,7 +1,8 @@
 {
 	"displayName": "techne",
 	"bpm": 150.0,
-	"icon": "ronpower",
+	"icon": "fanmade/alyxs_stuff/tech",
 	"port": "placeholder_2",
-	"color": "#F6B604"
+	"color": "#000000",
+	"version": "Fanmade"
 }

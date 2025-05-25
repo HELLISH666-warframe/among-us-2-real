@@ -1,6 +1,6 @@
 <!DOCTYPE codename-engine-character>
 <!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="overload" icon="power_conall" color="#0078ff" x="-750" y="-150" camx="921" camy="360" scale="0.9">
+<character sprite="fanmade_stuff/alyxs_stuff/overload" icon="fanmade/alyxs_stuff/power_conall" color="#0078ff" x="-750" y="-150" camx="921" camy="360" scale="0.9">
 	<anim name="singLEFT" anim="left" x="-580" y="-338.88888888888886" fps="12"/>
 	<anim name="idle" anim="idle" x="-681.1111111111111" y="-355.55555555555554" fps="16"/>
 	<anim name="singDOWN" anim="down" x="-634.4444444444445" y="-448.88888888888886" fps="12"/>

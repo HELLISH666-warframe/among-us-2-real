@@ -1,7 +1,7 @@
-var chrom:CustomShader  = new CustomShader("chromatic aberration");
-var wig:CustomShader  = new CustomShader("glitchsmh");
-var vhs:CustomShader  = new CustomShader("vhs");
-var crt:CustomShader  = new CustomShader("fake CRT");
+var chrom:CustomShader = new CustomShader("chromatic aberration");
+var wig:CustomShader = new CustomShader("glitchsmh");
+var vhs:CustomShader = new CustomShader("vhs");
+var crt:CustomShader = new CustomShader("fake CRT");
 var time:Float = 0;
 var timer:Int;
 var mmtw:FlxSound = new FlxSound();
@@ -55,5 +55,11 @@ override function update(elapsed:Float){time += elapsed;
 		FlxTween.tween(FlxG.camera, {zoom: 0.5, angle: 45}, 0.9, {ease: FlxEase.quadIn});
 		new FlxTimer().start(0.8, function(tmr:FlxTimer)
 		FlxG.switchState(new TitleState()));
+	}
+	if (FlxG.keys.justPressed.SEVEN) {
+		persistentUpdate = false;
+		persistentDraw = true;
+		import funkin.editors.EditorPicker;
+		openSubState(new EditorPicker());
 	}
 }

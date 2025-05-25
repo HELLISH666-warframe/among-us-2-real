@@ -1,31 +1,36 @@
 var time:Float = 0;
-var iTime:Float = 0;
-var vhs:CustomShader  = new CustomShader("chromatic aberration");
-var wig:CustomShader  = new CustomShader("glitchsmh");
+var chrom:CustomShader = new CustomShader("chromatic aberration");
+var glitch:CustomShader = new CustomShader("glitchsmh");
+function postCreate(){
+	wbg = new FlxSprite().makeSolid(FlxG.width*3, FlxG.height*3, FlxColor.BLACK);
+    wbg.scale.set(5,5);
+    wbg.alpha = 0.35;
 
-function postCreate(){}
-
-override function update(elapsed:Float){time += elapsed;
-	vhs.data.rOffset.value = [0.005*Math.sin(time)];
-	vhs.data.bOffset.value = [-0.005*Math.sin(time)];
-	wig.data.iTime.value = [0.005*Math.sin(time)];
-}
-
-function stepHit(curStep){
-{
-
-	switch(curStep){
-		case 256:
-			FlxG.camera.addShader(vhs);
-			camHUD.addShader(vhs);
-			vhs.data.rOffset.value = [1/2];
-			vhs.data.gOffset.value = [0.0];
-			vhs.data.bOffset.value = [1 * -1];
-		case 257:
-			FlxG.camera.addShader(wig);
-			camHUD.addShader(wig);
-			wig.data.iTime.value = [2,2];
-			wig.data.on.value = [1.];
+    fx = new FlxSprite().loadGraphic(Paths.image('stages/effect'));
+    fx.setGraphicSize(Std.int(2560 * 0.75));
+	for(i in [fx,wbg]){
+		i.updateHitbox();
+		i.screenCenter();
+		i.scrollFactor.set();
 	}
+    fx.antialiasing = true;
+    fx.alpha = 0.5;	
 }
+function update(elapsed:Float){time += elapsed;
+	chrom.data.rOffset.value = [chromeOffset*Math.sin(time)];
+	chrom.data.bOffset.value = [-chromeOffset*Math.sin(time)];
+	glitch.data.iTime.value = [time];
+}
+function beatHit(curBeat){
+	if (curBeat == 64)
+	{
+		if (FlxG.save.data.chrom)FlxG.camera.addShader(chrom);
+		if (FlxG.save.data.glitch){FlxG.camera.addShader(glitch);
+		glitch.data.on.value = [1.];
+		}
+		stage.getSprite("background").visible = false;
+		stage.getSprite("darkbackground").alpha = 1;
+		add(fx);
+		add(wbg);
+	}
 }

@@ -2,7 +2,56 @@ import flixel.addons.effects.FlxTrail;
 import flixel.addons.effects.FlxTrailArea;
 var hudAngle:Bool = false;
 var time:Float = 0;
+var owo = 0;
+var owo2 = 0;
+var owo3 = 0.5;
+var uwu = 0.015;
+var funni = 0.05;
+
 override function update(elapsed:Float){time += elapsed;
+	var currentBeat2:Float = (Conductor.songPosition / 1000)*(Conductor.bpm/170);
+	
+    pentad.angle=pentad.angle-funni;
+    
+    particle.y=particle.y=10;
+
+    if (lavad.y >= -2000){
+        lavad.y=-4000;
+    }
+    if (particle.y <= -5000){
+        particle.y=-50;
+    }
+	if (curBeat >= 110){
+        if (health > 1.6){
+            owo = 0.1;
+            owo2 = 0.2;
+        }
+        if ((health <= 1.6) && (health > 1.2)){
+            owo = 0.3;
+            owo2 = 0.4;
+        }
+        if ((health <= 1.2) && (health > 0.8)){
+            owo = 0.5;
+            owo2 = 0.6;
+        }
+        if ((health <= 0.8) && (health > 0.4)){
+            owo = 0.7;
+            owo2 = 0.8;
+        }
+        if (health <= 0.4){
+            owo = 0.9;
+            owo2 = 1;
+        }
+    }
+	if (curBeat >= 572){
+        FlxG.camera.shake(0.24, 0.05);
+        camHUD.shake(0.12, 0.05);
+    if (curBeat >= 112){
+        if (health > 0.05){
+            health - 0.0075;
+        }
+    }
+}
 if (hudAngle)
 	{
 		FlxG.camera.angle = -10 * Math.sin((time/2) * Math.PI);
@@ -20,15 +69,15 @@ function postCreate() {
 	particle.cameras = [camGame];
 	particle.angle = 180;
 	particle.alpha = 0;
-	screencum.cameras = [camHUD];
+	screencum.camera = camOther2;
 	screencum.screenCenter();
 	screencum.alpha = 0;
-	deadly1.cameras = [camHUD];
+	deadly1.camera = camOther2;
 	deadly1.alpha = 0;
-	deadly2.cameras = [camHUD];
+	deadly2.cameras = camOther2;
 	deadly2.alpha = 0;
-	dead.cameras = [camHUD];
-	alive.cameras = [camHUD];
+	dead.cameras = camOther2;
+	alive.cameras = camOther2;
 	alive.alpha = 0;
 }
 
@@ -42,13 +91,11 @@ function beatHit(curBeat)
 	if ((curBeat >= 180) && (curBeat < 243))
 	{
 		FlxTween.tween(camHUD, {zoom: 1}, 0.25, {ease: FlxEase.circOut});
-//		triggerEvent('Add Camera Zoom', 0.1, 0)
 		camHUD.zoom = 1.3;
 	}
 	if ((curBeat >= 504) && (curBeat < 571))
 	{
 		FlxTween.tween(camHUD, {zoom: 1}, 0.25, {ease: FlxEase.circOut});
-//		triggerEvent('Add Camera Zoom', 0.1, 0)
 		camHUD.zoom = 1.3;
 	}
 	if ((curBeat == 110))
@@ -71,8 +118,8 @@ function beatHit(curBeat)
 		hudAngle = true;
 		FlxG.sound.play(Paths.sound('fanmade/alyxs_stuff/coom'), 1);
 		FlxTween.tween(particle, {alpha: 1}, 0.5);
-		dad.y = -500;
-		boyfriend.y = -400;
+		dad.y = -1100;
+		boyfriend.y = -1000;
 		bgbackd.alpha = 0;
 		bgmidd.alpha = 0;
 		bgfrontd.alpha = 0;
@@ -83,8 +130,8 @@ function beatHit(curBeat)
 	}	
 	if ((curBeat == 236))
 	{ 
-		FlxTween.tween(dad, {y: 250}, 4, {ease: FlxEase.bouceOut});
-		FlxTween.tween(boyfriend, {y: 450}, 4, {ease: FlxEase.bounceOut});
+		FlxTween.tween(dad, {y: 0}, 4, {ease: FlxEase.bouceOut});
+		FlxTween.tween(boyfriend, {y: 100}, 4, {ease: FlxEase.bounceOut});
 		fored2.alpha = 1;
 	}	
 	if ((curBeat == 244))

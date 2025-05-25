@@ -2,5 +2,6 @@
 	"displayName": "double-trouble",
 	"bpm": 100.0,
 	"port": "placeholder_2",
-    "icon": "onslaughthell"
+    "icon": "onslaughthell",
+	"version": "V2.5/V3"
 }

@@ -2,6 +2,11 @@
 	"displayName": "ayo",
 	"bpm": 150.0,
 	"icon": "ronmad",
+	"difficulties": [
+		"HARD",
+		"ERECT"
+	],
 	"port": "ayo",
-	"color": "#F6B604"
+	"color": "#8B4513",
+	"version": "V3/Fanmade"
 }

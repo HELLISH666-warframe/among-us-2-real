@@ -6,11 +6,6 @@ importScript("data/scripts/windowspam");
 //FlxG.scaleMode.width = 1180;
 //FlxG.scaleMode.height = 960;
 //     camHUD.height = 957;
-override function update(elapsed:Float){}
-
-function create() {
-
-}
 function stepHit(curStep)
     {
         {
@@ -45,7 +40,6 @@ function stepHit(curStep)
             console.screenCenter();
             console.alpha = 0.3;
             insert(2, console);
-            add(console);
             var popup:FlxSprite = new FlxSprite();
             popup.frames = Paths.getSparrowAtlas('stages/trojan-virus/atelo_popup_animated');
             popup.scale.set(4,4);

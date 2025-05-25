@@ -9,10 +9,12 @@ function postCreate(){
 	window.antialiasing = false;
 	window.scrollFactor.set(0, 0);
 	add(window);
+	window.camera=camHUD;
 	cursor = new FlxSprite(-50, -50).loadGraphic(Paths.image('stages/fan-made_stuff/alyxs_stuff/newCred/credMouse'));
 	cursor.updateHitbox();
 	cursor.antialiasing = false;
 	cursor.scrollFactor.set(0, 0);
+	cursor.camera=camHUD;
 	add(cursor);
 }
 function beatHit(curBeat)

@@ -2,6 +2,12 @@
 	"displayName": "Bloodshed",
 	"bpm": 170.0,
 	"icon": "hellron",
+	"difficulties": [
+		"TWO",
+		"HARD",
+		"FANMADE-D"
+	],
 	"port": "bloodshed",
-	"color": "#000000"
+	"color": "#000000",
+	"version": "V2.5/3/Fanmade"
 }

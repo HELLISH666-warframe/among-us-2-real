@@ -1,14 +1,22 @@
 <!DOCTYPE codename-engine-stage>
 <stage zoom="0.8" folder="stages/fan-made_stuff/alyxs_stuff">
-   	<sprite name="tro-jan_behind" x="-800" y="-500" sprite="trojo/tro-jan_behind" scroll="1" />
-   	<sprite name="tro-jan_dbg" x="-800" y="100" sprite="trojo/tro-jan_dbg" scroll="1"/>
-     <sprite name="glitchybg" x="300" y="-400" sprite="trojo/glitchybg" scroll="1" type="loop"   scale="6"   />
-         <anim name="glitchybg" anim="ladygaga" loop="true"/>
-   	<sprite name="windowblock" x="-800" y="550" sprite="trojo/windowblock"  scale="1.1" scroll="1"/>
+     <sprite name="code" x="300" y="-400" sprite="trojo/glitchybg" scroll="1" type="loop"   scale="6" />
+         <anim name="code" anim="ladygaga" loop="true"/>
+	<sprite name="behind" x="-1000" y="-900" sprite="trojo/city" scrollx="0.3" scrolly="0.7"/>
+	<sprite name="behind2" x="-800" y="-200" sprite="trojo/ground" scrollx="0.5" scrolly="0.8"/>
+	<sprite name="behind3" x="-400" y="-500" scale="1.1" sprite="trojo/trees" scrollx="0.7" scrolly="0.9"/>
+   	<sprite name="foreskin" x="-700" y="200" sprite="trojo/tro-jan_dbg" scroll="1"/>
+	<sprite name="foreskinpix" x="-700" y="200" sprite="trojo/tro-jan_dbg_pix" scale="1.1" scroll="1"/>
+   	<sprite name="foreskin2" x="-800" y="550" sprite="trojo/windowblock"  scale="1.1" scroll="1"/>
+	<sprite name="bucket" x="600" y="750" sprite="trojo/bucket" scale="1.2" scroll="1" alpha="0"/>
    	<dad />
    	<boyfriend />
+	<sprite name="grade" x="-750" y="-250" sprite="grade" scale="0.6" scroll="1" />
 	<sprite name="dead" x="-800" y="0" sprite="dead"  scale="1.1" scroll="1"/>
-	<sprite name="window" x="-800" y="550" sprite="trojo/window"  scale="1.1" scroll="1"/>
-	<sprite name="window2" x="-800" y="550" sprite="trojo/window"  scale="1.1" scroll="1"/>
-	<sprite name="window3" x="-800" y="550" sprite="trojo/window"  scale="1.1" scroll="1"/>
+	<sprite name="window" x="-800" y="550" sprite="trojo/window" scale="1.1" scroll="1"/>
+	<sprite name="window2" x="-800" y="550" sprite="trojo/window" scale="1.1" scroll="1"/>
+	<sprite name="window3" x="-800" y="550" sprite="trojo/window" scale="1.1" scroll="1"/>
+	<sprite name="windowhud" x="500" y="0" sprite="trojo/window" scale="1.5" scroll="0.3"/>
+	<sprite name="windowhud2" x="-200" y="300" sprite="trojo/window" scale="1.5" scroll="0.3"/>
+	<sprite name="windowhud3" x="800" y="500" sprite="trojo/window" scale="1.5" scroll="0.3"/>
 </stage>

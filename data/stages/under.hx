@@ -44,12 +44,10 @@ function create() {
         if (FlxG.save.data.glitch) {FlxG.camera.addShader(glitchShader);}
 }
 function stepHit(curStep)
-    {
-        {
-            if (curStep == 1)
-                {
-                    for (i in 0...playerStrums.members.length) FlxTween.tween(playerStrums.members[i], {x: playerStrums.members[i].x - 325}, (Conductor.crochet/800), {ease: FlxEase.linear});
-                    for (i in 0...cpuStrums.members.length) FlxTween.tween(cpuStrums.members[i], {x: cpuStrums.members[i].x - 650 }, (Conductor.crochet/400), {ease: FlxEase.linear});
-                }
-            }
-        }
+{
+   /*{
+    if (curStep == 1)
+        {for (i in 0...playerStrums.members.length) FlxTween.tween(playerStrums.members[i], {x: playerStrums.members[i].x - 325}, (Conductor.crochet/800), {ease: FlxEase.linear});
+        for (i in 0...cpuStrums.members.length) FlxTween.tween(cpuStrums.members[i], {x: cpuStrums.members[i].x - 650 }, (Conductor.crochet/400), {ease: FlxEase.linear});}
+    }*/
+}

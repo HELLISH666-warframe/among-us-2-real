@@ -12,5 +12,6 @@
 	"beatsPerMeasure": 4,
 	"bpm": 100,
 	"port": "triad",
-	"name": "triple_ron"
+	"name": "triple_ron",
+	"version": "V2.5"
 }

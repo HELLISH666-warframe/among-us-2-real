@@ -3,5 +3,6 @@
 	"bpm": 100.0,
 	"icon": "ateloron",
 	"port": "file-manipulation",
-	"color": "#000000"
+	"color": "#000000",
+	"version": "V2.5"
 }

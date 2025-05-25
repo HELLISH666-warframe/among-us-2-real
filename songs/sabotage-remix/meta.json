@@ -2,6 +2,10 @@
 	"displayName": "sabotage-remix",
 	"bpm": 176.0,
 	"icon": "arongus",
+	"difficulties": [
+		"HARD"
+	],
 	"port": "lights-down-remix",
-	"color": "#F6B604"
+	"color": "#F6B604",
+	"version": "V3"
 }

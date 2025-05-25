@@ -2,6 +2,14 @@
 	"displayName": "wasted",
     "bpm": 210.0,
 	"icon": "ronslightly",
+	"difficulties": [
+		"2.5",
+		"FLIP",
+		"HARD",
+		"V4",
+		"ERECT"
+	],
 	"port": "wasted",
-	"color": "#F6B604"
+	"color": "#F6B604",
+	"version": "V2.5/3/4/Fanmade"
 }

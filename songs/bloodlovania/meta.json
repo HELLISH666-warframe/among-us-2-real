@@ -3,5 +3,6 @@
 	"bpm": 100.0,
 	"icon": "dripron",
 	"port": "bloodlovania",
-	"color": "#000000"
+	"color": "#000000",
+	"version": "Fanmade"
 }

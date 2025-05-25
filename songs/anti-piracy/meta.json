@@ -2,6 +2,11 @@
 	"displayName": "anti-piracy",
 	"bpm": 100.0,
 	"icon": "hellron",
+	"difficulties": [
+		"HARD",
+		"EARLY"
+	],
 	"port": "anti-piracy",
-	"color": "#000000"
+	"color": "#000000",
+	"version": "V2.5"
 }

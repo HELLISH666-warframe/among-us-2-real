@@ -1,4 +1,4 @@
-function beatHit(curStep)
+/*function beatHit(curStep)
 	{
 		if ((curBeat >= 40) && (curBeat < 72))
 	{

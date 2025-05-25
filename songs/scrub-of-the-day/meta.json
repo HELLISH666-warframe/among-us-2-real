@@ -3,5 +3,6 @@
 	"bpm": 150.0,
 	"icon": "bijuuron",
 	"port": "bijuu",
-	"color": "#F6B604"
+	"color": "#00B439",
+	"version": "V2.5"
 }

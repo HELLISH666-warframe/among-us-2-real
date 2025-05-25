@@ -1,23 +1,24 @@
 import flixel.graphics.FlxGraphic;
 import flixel.effects.particles.FlxParticle;
 import flixel.effects.particles.FlxTypedEmitter;
+import flixel.text.FlxTextBorderStyle;
 import funkin.backend.chart.Chart;
 import Alphabetthing;
 
 //shaders
 var time:Float = 0;
-var crt:CustomShader  = new CustomShader("fake CRT");
-var chrom:CustomShader  = new CustomShader("chromatic aberration");
-var fish:CustomShader  = new CustomShader("fisheye1");
-var glitch:CustomShader  = new CustomShader("glitchsmh");
-var grey:CustomShader  = new CustomShader("grayscale");
-var vhs:CustomShader = new CustomShader("vhs");
-
+var crt = new CustomShader("fake CRT");
+var chrom = new CustomShader("chromatic aberration");
+var fish = new CustomShader("fisheye1");
+var glitch = new CustomShader("glitchsmh");
+var grey = new CustomShader("grayscale");
+var vhs = new CustomShader("vhs");
+var official_or_not:String;
 songs = [];
 songRealList = [
 	["ron","wasted","ayo","bloodshed","trojan-virus","Recycle-Bin","file-manipulation","factory-reset"],
 	["ron-classic","wasted-classic","ayo-classic","bloodshed-classic","trojan-virus-classic","bleeding-classic"],
-	["Tutorial","bloodbath","official-debate","gron","difficult-powers","bijuu","trouble","withered-tweaked","atelophobia","holy-shit-dave-fnf","slammed","meme-machine","frosting-over","ron-b","ron-dsides","bloodshed-b-old","sabotage-remix","lights-down-remix","pretty-wacky","certified-champion","rong-aisle","bloodshed-legacy-redux","clusterfunk","awesome-ron","oh-my-god-hes-ballin","fardventure","bleeding","haemorrhage","anti-piracy"]
+	["Tutorial","bloodbath","official-debate","gron","difficult-powers","bijuu","trouble","withered-tweaked","atelophobia","holy-shit-dave-fnf","slammed","meme-machine","frosting-over","ron-b","ron-dsides","bloodshed-b-old","sabotage-remix","lights-down-remix","pretty-wacky","cheese-touch","he-hates-me","certified-champion","rong-aisle","bloodshed-legacy-redux","clusterfunk","awesome-ron","oh-my-god-hes-ballin","fardventure","triad","bleeding","haemorrhage","homicidal-lunacy","bloodlovania","anti-piracy","run","run","run","run","run","run","run","run","run","run","run","run","apollo","techne"]
 ];
 modelist = ["MAIN","CLASSIC","EXTRAS"];
 rsongsFound = songRealList[FlxG.save.data.freeplaything];
@@ -26,36 +27,37 @@ modelistt = modelist[FlxG.save.data.freeplaything];
 for(s in rsongsFound)
 	songs.push(Chart.loadChartMeta(s, "hard", true));
 //cam
-var camText:FlxCamera = new FlxCamera();
+var camText = new FlxCamera();
 camText.bgColor = null;
 
-var portrait:FlxSprite;
+var portrait = new FlxSprite();
+var portraitOverlay = new FlxSprite();
 var preload = [];
 var grpSongs2:FlxTypedGroup<Alphabet> = [];
 var iconArray2:Array<HealthIcon> = [];
-var modeText:FlxText;
+var modeText:FlxText = new FlxText(10, 10, 0, modelistt, 48);
+var fanmade_text = new FlxText(540, 1, 0, official_or_not, 48);
 var chromeOffset = (FlxG.save.data.chromeOffset/350);
-function update(elapsed:Float){time += elapsed;
+function postUpdate(elapsed:Float){time += elapsed;
 	chrom.data.rOffset.value = [chromeOffset*Math.sin(time)];
 	chrom.data.bOffset.value = [-chromeOffset*Math.sin(time)];
-	glitch.data.iTime.value = [0.005*Math.sin(time)];
-	vhs.data.iTime.value = [time];
+	glitch.iTime = time;
+	vhs.iTime = time;
 
 	for (i in 0...songs.length)
 		grpSongs2.members[i].y += (Math.sin(i+time)/2);
 
 	for (item in grpSongs2.members)
-	{
 		item.forceX = FlxMath.lerp(item.x, 125 + (65 * (item.ID - curSelected)), lerpFix(0.1));
-		for (i in 0...songs.length)
-			item.y += (Math.sin(i+elapsed)/2);
-	}
-}
-function postUpdate(elapsed:Float){
+	portraitOverlay.y = portrait.y;
+	portraitOverlay.angle = portrait.angle;
 	if(controls.BACK)FlxG.switchState(new ModState('MasterFreeplayState'));
 }
-function shadering() 
-{
+function update(elapsed:Float) {
+	if(((curSelected == 0)&&(modelistt=="EXTRAS")&&(controls.UP_P))){curSelected = 34;}
+}
+
+function shadering() {
     switch(songs[curSelected].displayName)
     {
 		case "gron": if(FlxG.save.data.grey)FlxG.camera.addShader(grey);camText.addShader(grey);
@@ -65,22 +67,39 @@ function shadering()
     }
 	diffText.color = switch(diffText.text)
 	{
-		case 'COOL':0xE00020;
+		case '< COOL >':0xF00020;
+		case 'STAINED'|'FANMADE-D':0x347FF1;
 		default: 0xFFFFFFFF;		
 	}
+	fanmade_text.color = switch(diffText.text)
+	{
+		case 'STAINED':0x347FF1;
+		default: 0xffee00;		
+	}
+	if ((songs[curSelected].port == 'slammed')||(songs[curSelected].port == 'oh-my-god-hes-ballin'))
+	{
+		portraitOverlay.loadGraphic(Paths.image('menus/freeplay/portraits/'+songs[curSelected].port+'-over'));
+		portraitOverlay.updateHitbox();
+		portraitOverlay.screenCenter();
+		new FlxTimer().start(0.2, function(tmr:FlxTimer)
+		portraitOverlay.visible = true);
+	}
+	else
+		new FlxTimer().start(0.16, function(tmr:FlxTimer)
+		portraitOverlay.visible = false);
 }
 function create(){
 	grpSongs2 = new FlxTypedGroup();
 	add(grpSongs2);
 	for (i in 0...songs.length)
 	{
-		var songText:Alphabetthing = new Alphabetthing(0, (70 * i) + 30, songs[i].displayName, true, false);
+		var songText = new Alphabetthing(0, (70 * i) + 30, songs[i].displayName.toUpperCase(),true);
 		songText.isMenuItem = true;
 		songText.targetY = i;
 		songText.ID = i;
 		songText.camera = camText;
 		grpSongs2.add(songText);
-		var icon:HealthIcon = new HealthIcon(songs[i].icon);
+		var icon = new HealthIcon(songs[i].icon);
 		icon.sprTracker = songText;
 
 		iconArray2.push(icon);
@@ -88,11 +107,9 @@ function create(){
 	}
 	for (i in 0...iconArray2.length) remove(iconArray2[i]);
 	if(curSelected >= songs.length) curSelected = 0;
-	modeText = new FlxText(10, 10, 0, modelistt, 48);
 	modeText.setFormat(Paths.font("w95.otf"), 48, FlxColor.WHITE);
 	insert(2,modeText);
 
-	portrait = new FlxSprite().loadGraphic(Paths.image('menus/freeplay/portraits/ron'));
 	portrait.updateHitbox();
 	insert(2,portrait);
 }
@@ -100,7 +117,6 @@ function postCreate() {
 	FlxG.cameras.add(camText, false);
 	remove(grpSongs);
 	for (i in iconArray) remove(i);
-	if (FlxG.save.data.glitch)FlxG.camera.addShader(glitch);
 
 	bg.frames = Paths.getSparrowAtlas('menus/freeplay/mainbgAnimate');
 	if(FlxG.save.data.freeplaything == 1){
@@ -113,14 +129,17 @@ function postCreate() {
 	bg.screenCenter();
 
 	var bar:FlxSprite = CoolUtil.loadAnimatedGraphic(new FlxSprite(490,-20), Paths.image('menus/freeplay/bar'));
-	add(bar);
+	insert(3,bar);
 
 	for (i in 0...iconArray2.length) add(iconArray2[i]);
 	
-	insert(4,scoreText);
-	scoreBG.alpha = 0.3;
-	insert(3,scoreBG);
-	insert(4,diffText);
+	for (i in [scoreText,scoreBG,diffText,portraitOverlay])
+		insert(4,i);
+		scoreBG.alpha = 0.3;
+
+	fanmade_text.setFormat(Paths.font("w95.otf"), 48, FlxColor.RED);
+	fanmade_text.angle=-3;
+	insert(9,fanmade_text);
 			
 	for (i in songs) {
 		var graphic = FlxGraphic.fromAssetKey(Paths.image('menus/freeplay/portraits/' + i.port));
@@ -128,13 +147,11 @@ function postCreate() {
 		preload.push(graphic);
 	}
 	changeSelection(0, true);
+	if (FlxG.save.data.glitch)FlxG.camera.addShader(glitch);
 	if (FlxG.save.data.crt)FlxG.camera.addShader(crt);
-	if (FlxG.save.data.chrom) {FlxG.camera.addShader(chrom);
-		chrom.data.rOffset.value = [1/2];
-		chrom.data.bOffset.value = [1 * -1];
-		camText.addShader(fish);
-		fish.data.MAX_POWER.value = [0.2];
-    }
+	if (FlxG.save.data.chrom) FlxG.camera.addShader(chrom);
+	camText.addShader(fish);
+	fish.MAX_POWER = 0.2;
 	var coolemitter:FlxTypedEmitter = new FlxTypedEmitter();
 	coolemitter.velocity.set(0, -5, 0, -10);
 	coolemitter.y = FlxG.height;
@@ -168,6 +185,7 @@ function onChangeSelection(event) {
 	var val = event.value;
 	//I_know_this_is_dumb_but_dont_know_how_to_do_it_in_a_NON-dumb_way
 	FlxTween.tween(scoreText, {y: scoreText.y + 0}, 0.00000000000000001, {ease: FlxEase.quintIn, onComplete: function(twn:FlxTween){
+			fanmade_text.text=songs[curSelected].version;
 		var bullShit:Int = 0;
 
 		for (i in grpSongs2)
@@ -192,6 +210,4 @@ function onChangeSelection(event) {
 		FlxTween.tween(portrait, {y: mfwY, angle: 0}, 0.4, {ease: FlxEase.elasticOut});
 	}});
 }
-public static function lerpFix(value:Float) {
-	return value / (60 / 60);
-}
+public static function lerpFix(value:Float) {return value / (60 / 60);}

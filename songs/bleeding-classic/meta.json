@@ -3,5 +3,6 @@
 	"bpm": 200.0,
 	"icon": "hellron-classic",
 	"port": "bleeding-classic",
-	"color": "#000000"
+	"color": "#010000",
+	"version": "V3/Old"
 }

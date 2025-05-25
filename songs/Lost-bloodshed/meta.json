@@ -3,5 +3,6 @@
 	"bpm": 100.0,
 	"icon": "hellron",
 	"port": "lost-bloodshed",
-	"color": "#F00000"
+	"color": "#F00000",
+	"version": "Fanmade"
 }

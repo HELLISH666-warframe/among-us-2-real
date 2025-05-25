@@ -2,6 +2,11 @@
 	"displayName": "oh-my-god-hes-ballin",
 	"bpm": 140.0,
 	"icon": "ballerorina",
+	"difficulties": [
+		"HARD",
+		"OLD"
+	],
 	"port": "oh-my-god-hes-ballin",
-	"color": "#fa0000"
+	"color": "#fa0000",
+	"version": "V3/Old"
 }

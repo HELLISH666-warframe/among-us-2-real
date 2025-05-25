@@ -3,5 +3,6 @@
 	"bpm": 185.0,
 	"icon": "ron-usb",
 	"port": "file-manipulation",
-	"color": "#F6B604"
+	"color": "#F6B604",
+	"version": "V2.5"
 }

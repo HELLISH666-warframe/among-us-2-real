@@ -2,6 +2,11 @@
 	"displayName": "Bleeding",
 	"bpm": 200.0,
 	"icon": "dripron",
+	"difficulties": [
+		"COOL",
+		"2.5"
+	],
 	"port": "bleeding",
-	"color": "#000000"
+	"color": "#000000",
+	"version": "V3/2.5"
 }
