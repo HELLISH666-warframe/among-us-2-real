@@ -3,5 +3,10 @@
 	"bpm": 147.0,
 	"icon": "ronslightly-classic",
 	"port": "wasted-classic",
-	"color": "#F6B604"
+	"color": "#F6B604",
+	"difficulties": [
+		"HARD",
+		"OLD"
+	],
+	"version":"V3/Old"
 }

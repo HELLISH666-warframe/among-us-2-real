@@ -551,7 +551,7 @@
 				0,
 				"Technically",
 				true,
-				"0,-200",
+				"0,-5700",
 				false
 			],
 			"name": "Change Character",
@@ -567,14 +567,6 @@
 			],
 			"name": "Scroll Speed Change",
 			"time": 201317.647058823
-		},
-		{
-			"params": [
-				"resettrial",
-				""
-			],
-			"name": "HScript Call",
-			"time": 201325
 		},
 		{
 			"params": [

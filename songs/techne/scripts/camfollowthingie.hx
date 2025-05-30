@@ -1,5 +1,5 @@
 // I'm so exhausted man
-var xx:Float = 1725;
+/*var xx:Float = 1725;
 var yy:Float = 1100;
 var xx2:Float = 1725;
 var yy2:Float = 1100;
@@ -128,4 +128,4 @@ function getMid(value, size){
    result = value + (size / 2);
 
    return result;
-}
+}*/

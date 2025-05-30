@@ -6,7 +6,7 @@ var theValue = 5;
 var daTingX:Bool = false;
 var daTingY:Bool = false;
 var daTingYSmall:Bool = false;
-var hudAngle:bool = false;
+var hudAngle:Bool = false;
 var yippee = 1;
 var greyScale:CustomShader = new CustomShader("fanmade_stuff/alyxs_stuff/GreyscaleEffect");
 var chromAbEffect:CustomShader = new CustomShader("fanmade_stuff/alyxs_stuff/ChromAbEffect");
@@ -137,8 +137,8 @@ function update(elapsed:Float) {
         FlxG.camera.shake(0.0075, 0.05);
         camHUD.shake(0.004, 0.05);
     }
-    if (stage.getSprite("kamehameha").y >= -2500){
-        stage.getSprite("kamehameha").y= -3250;
+    if (stage.getSprite("kamehameha").y >= -500){
+        stage.getSprite("kamehameha").y= -1250;
     }
     if ((curBeat >= 40) && (curBeat < 41)){
         if (pentyVar > 0.1){
@@ -237,6 +237,9 @@ function beatHit(curBeat:Int) {
     cameraSpeed = 4;
     defaultCamZoom=0.4;
     }
+	if (curBeat == 37){
+        cameraSpeed = 0.6;
+    }
 	if (curBeat == 40)
 	{     
 	FlxTween.tween(camHUD, {alpha: 1}, 0.1, {ease: FlxEase.quadOut});
@@ -244,24 +247,96 @@ function beatHit(curBeat:Int) {
 	FlxTween.num(0, 0.005, 0.75, {ease: FlxEase.quadIn}, function(strength:FlxTween){
 	chromAbEffect.data.strength.value = [strength];});
 	}
-	if (curBeat == 108)
-	{  
-	hudAngle = true;
-	FlxG.sound.play(Paths.sound('fanmade/alyxs_stuff/boom'), 0.4);
-	}
-	if (curBeat == 172)
-	{     
-	hudAngle = false;
-	FlxTween.tween(camHUD, {angle: 0}, 1, {ease: FlxEase.quadOut});
-	FlxTween.tween(FlxG.camera, {zoom: 0.6}, 1.5, {ease: FlxEase.quadOut});
-	defaultCamZoom = 0.6;
-	FlxG.camera.angle=0;
-	}
-	if (curBeat == 176)
-	{     
-	hudAngle = true;
-	}
-	/*if (curBeat == 218) {
+	if (curBeat == 72){
+    FlxTween.tween(FlxG.camera, {zoom: 0.5}, 1.75, {ease: FlxEase.quadInOut});
+    defaultCamZoom=0.5;
+    }
+	if (curBeat == 103){
+    FlxTween.tween(camHUD, {alpha: 0.9}, 0.5, {ease: FlxEase.quadInOut});
+    defaultCamZoom=0.9;
+    }
+	if (curBeat == 104){
+    pentyVar = 2;
+    FlxG.camera.shake(0.005, 1.25);
+    camHUD.shake(0.0025, 1.25);
+	//Huh.
+	FlxTween.tween(boyfriend, {y: -11800}, 1.5, {ease: FlxEase.quadIn});
+    FlxTween.tween(FlxG.camera, {zoom: 0.3}, 1.25, {ease: FlxEase.quadInOut});
+	FlxTween.tween(FlxG.camera, {angle: 180}, 1.25, {ease: FlxEase.quadInOut});
+	FlxTween.tween(dad, {y: -12000}, 1.5, {ease: FlxEase.quadIn});
+	FlxTween.tween(boyfriend, {angle: 360}, 1, {ease: FlxEase.quadIn});
+	FlxTween.tween(scoreTxt, {alpha: 0}, 1.25, {ease: FlxEase.quadIn});
+   // runTimer('start', 0.01)
+    }
+	if (curBeat == 108){
+    uwu = 0.035;
+    hudAngle = true;
+    FlxG.sound.play(Paths.sound('fanmade/alyxs_stuff/boom'), 0.4);
+    FlxTween.tween(FlxG.camera, {zoom: 1}, 5, {ease: FlxEase.linear});
+    FlxTween.tween(FlxG.camera, {angle: 25}, 5, {ease: FlxEase.linear});
+    FlxTween.tween(camHUD, {alpha: 1}, 0.75, {ease: FlxEase.quadOut});
+    cameraSpeed = 2;
+    defaultCamZoom=1.2;
+    FlxG.camera.angle=0;
+    dad.y=-12000;
+    }
+	if (curBeat == 123){
+    FlxTween.tween(FlxG.camera, {zoom: 0.6}, 0.25, {ease: FlxEase.quadOut});
+    FlxTween.tween(FlxG.camera, {angle: 0}, 0.25, {ease: FlxEase.quadOut});
+    defaultCamZoom=0.6;
+    }
+    if (curBeat == 124){
+    FlxTween.tween(FlxG.camera, {zoom: 1.2}, 5, {ease: FlxEase.linear});
+    FlxTween.tween(FlxG.camera, {angle: -25}, 5, {ease: FlxEase.linear});
+    defaultCamZoom=1.2;
+    }
+    if (curBeat == 139){
+    FlxTween.tween(FlxG.camera, {zoom: 0.6}, 0.25, {ease: FlxEase.quadOut});
+    FlxTween.tween(FlxG.camera, {angle: 0}, 0.25, {ease: FlxEase.quadOut});
+    defaultCamZoom=0.6;
+    }
+    if (curBeat == 140){
+    FlxTween.tween(FlxG.camera, {zoom: 1}, 5, {ease: FlxEase.linear});
+	FlxTween.tween(FlxG.camera, {angle: 25}, 5, {ease: FlxEase.linear});
+    defaultCamZoom=1.2;
+    }
+    if (curBeat == 155){
+    FlxTween.tween(FlxG.camera, {zoom: 0.6}, 0.25, {ease: FlxEase.quadOut});
+    FlxTween.tween(FlxG.camera, {angle: 0}, 0.25, {ease: FlxEase.quadOut});
+    defaultCamZoom=0.6;
+    }
+	if (curBeat == 172){
+    hudAngle = false;
+    yippee = 0.2;
+    uwu = 0.01;
+    FlxTween.tween(camHUD, {angle: 0}, 1, {ease: FlxEase.quadOut});
+    FlxTween.tween(FlxG.camera, {zoom: 0.6}, 1.5, {ease: FlxEase.quadOut});
+    defaultCamZoom=0.6;
+    FlxTween.tween(scoreTxt, {alpha: 1}, 1.25, {ease: FlxEase.quadOut});
+    cameraSpeed = 1;
+    boyfriend.angle=0;
+    FlxG.camera.angle=0;
+	FlxG.camera.x=0;
+    dad.angle=0;
+    dad.y=-6000;
+    }
+	if (curBeat == 176){
+    hudAngle = true;
+    }
+	if (curBeat == 218){
+    FlxTween.tween(FlxG.camera, {zoom: 0.9}, 1.5, {ease: FlxEase.quadInOut});
+    defaultCamZoom=0.9;
+    cameraSpeed = 0.6;
+    for (i in 0...cpuStrums.members.length)FlxTween.tween(cpuStrums.members[i],{alpha: 0},1);
+    for (i in 0...1){ FlxTween.tween(cpuStrums.members[i], {x: 420}, 0.6, {ease: FlxEase.quadOut});}
+    for (i in 1...2){ FlxTween.tween(cpuStrums.members[i], {x: 530}, 0.65, {ease: FlxEase.quadOut});}
+    for (i in 2...3){ FlxTween.tween(cpuStrums.members[i], {x: 640}, 0.7, {ease: FlxEase.quadOut});}
+    for (i in 3...4){ FlxTween.tween(cpuStrums.members[i], {x: 750}, 0.75, {ease: FlxEase.quadOut});}
+
+    for (i in 0...1){ FlxTween.tween(playerStrums.members[i], {x: 420}, 0.6, {ease: FlxEase.quadOut});}
+    for (i in 1...2){ FlxTween.tween(playerStrums.members[i], {x: 530}, 0.65, {ease: FlxEase.quadOut});}
+    for (i in 2...3){ FlxTween.tween(playerStrums.members[i], {x: 640}, 0.7, {ease: FlxEase.quadOut});}
+    for (i in 3...4){ FlxTween.tween(playerStrums.members[i], {x: 750}, 0.75, {ease: FlxEase.quadOut});}
 	FlxTween.num(0, 1, 0.75, {ease: FlxEase.quadIn}, function(strength:FlxTween){
 	greyScale.data.strength.value = [strength];});
 	FlxTween.num(0, 2, 0.75, {ease: FlxEase.quadIn}, function(strength:FlxTween){
@@ -276,13 +351,58 @@ function beatHit(curBeat:Int) {
 	blur.data.strength.value = [strength];});
 	FlxTween.num(0, 0.005, 0.75, {ease: FlxEase.quadOut}, function(strength:FlxTween){
 	chromAbEffect.data.strength.value = [strength];});
-	}*/
-	if (curBeat == 300)
-	{     
-	hudAngle = false;
-	FlxTween.tween(camHUD, {angle: 0}, 3, {ease: FlxEase.quadOut});
-	FlxTween.tween(camHUD, {x: 0}, 3, {ease: FlxEase.quadOut});
-	FlxTween.tween(camHUD, {y: 0}, 3, {ease: FlxEase.quadOut});
+    for (i in 0...cpuStrums.members.length)FlxTween.tween(cpuStrums.members[i],{alpha: 1},0.5);
+    for (i in 0...1){ FlxTween.tween(cpuStrums.members[i], {x: 120}, 0.6, {ease: FlxEase.quadOut});}
+    for (i in 1...2){ FlxTween.tween(cpuStrums.members[i], {x: 230}, 0.65, {ease: FlxEase.quadOut});}
+    for (i in 2...3){ FlxTween.tween(cpuStrums.members[i], {x: 340}, 0.7, {ease: FlxEase.quadOut});}
+    for (i in 3...4){ FlxTween.tween(cpuStrums.members[i], {x: 450}, 0.75, {ease: FlxEase.quadOut});}
+    
+    for (i in 0...1){ FlxTween.tween(playerStrums.members[i], {x: 720}, 0.6, {ease: FlxEase.quadOut});}
+    for (i in 1...2){ FlxTween.tween(playerStrums.members[i], {x: 830}, 0.65, {ease: FlxEase.quadOut});}
+    for (i in 2...3){ FlxTween.tween(playerStrums.members[i], {x: 940}, 0.7, {ease: FlxEase.quadOut});}
+    for (i in 3...4){ FlxTween.tween(playerStrums.members[i], {x: 1050}, 0.75, {ease: FlxEase.quadOut});}
+	}
+	if (curBeat == 234){
+    FlxTween.tween(FlxG.camera, {zoom: 0.6}, 0.75, {ease: FlxEase.quadInOut});
+    defaultCamZoom=0.6;
+    cameraSpeed = 1;
+    }
+	if (curBeat == 251){
+    FlxTween.tween(FlxG.camera, {zoom: 0.7}, 0.75, {ease: FlxEase.quadInOut});
+    defaultCamZoom=0.7;
+    }
+    if (curBeat == 267){
+    FlxTween.tween(FlxG.camera, {zoom: 0.6}, 0.75, {ease: FlxEase.quadInOut});
+    defaultCamZoom=0.6;
+    }
+    if (curBeat == 283){
+    FlxTween.tween(FlxG.camera, {zoom: 0.7}, 0.75, {ease: FlxEase.quadInOut});
+    defaultCamZoom=0.7;
+    }
+	if (curBeat == 300){
+    hudAngle = false;
+	}
+	if (curBeat == 308){
+    uwu = 0.005;
+    FlxTween.tween(FlxG.camera, {angle: 15}, 2.75, {ease: FlxEase.quadInOut});
+	FlxTween.tween(FlxG.camera, {zoom: 1}, 2.75, {ease: FlxEase.quadIn});
+    defaultCamZoom=1;
+    cameraSpeed = 0.6;
+    }
+	if (curBeat == 448){
+    uwu = 0.035;
+	}
+	if (curBeat == 480){
+    uwu = 0.06;
+    hudAngle = true;
+	}
+	if (curBeat == 512){
+    uwu = 0.15;
+	}
+	if (curBeat == 548){
+    uwu = 0.01;
+    pentyVar = 0.05;
+    hudAngle = false;
 	}
 	if (curBeat == 556){
     FlxTween.tween(FlxG.camera, {zoom: 0.6}, 0.75, {ease: FlxEase.quadInOut});
@@ -352,41 +472,265 @@ function stepHit(curStep:Int) {
         FlxTween.tween(camHUD, {zoom: 1}, 0.75, {ease: FlxEase.expoOut});
         camHUD.zoom=1.15;
     }
-	if ((curBeat >= 40) && (curBeat < 72)){
+    /*if ((curBeat >= 40) && (curBeat < 72)){
         if (curStep % 16 == 0){
             FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
             camHUD.zoom=1.025;
-			trace("1");
 
-            FlxTween.tween(camHUD, {x: 25}, 0.5, {ease: FlxEase.quadOut});
+            FlxTween.tween(camHUD, {x: 0}, 0.5, {ease: FlxEase.quadOut});
+            camHUD.x=25;
+
         }
         if (curStep % 16 == 4){
             FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
             camHUD.zoom=1.025;
-			trace("2");
 
-            FlxTween.tween(camHUD, {x: -25}, 0.5, {ease: FlxEase.quadOut});
+            FlxTween.tween(camHUD, {x: 0}, 0.5, {ease: FlxEase.quadOut});
+            camHUD.x=-25;
         }
         if (curStep % 16 == 8){
             FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
             camHUD.zoom=1.025;
 
-            FlxTween.tween(camHUD, {x: 25}, 0.5, {ease: FlxEase.quadOut});
-			trace("4");
-
+            FlxTween.tween(camHUD, {x: 0}, 0.5, {ease: FlxEase.quadOut});
+            camHUD.x=25;
         }
         if (curStep % 16 == 11){
             FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
             camHUD.zoom=1.025;
-			trace("5");
 
-            FlxTween.tween(camHUD, {x: -25}, 0.5, {ease: FlxEase.quadOut});
+            FlxTween.tween(camHUD, {x: 0}, 0.5, {ease: FlxEase.quadOut});
+            camHUD.x=-25;
         }
         if (curStep % 16 == 14){
             FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
             camHUD.zoom=1.025;
 
-            FlxTween.tween(camHUD, {x: 25}, 0.5, {ease: FlxEase.quadOut});
+            FlxTween.tween(camHUD, {x: 0}, 0.5, {ease: FlxEase.quadOut});
+            camHUD.x=25;
         }
     }
+    if ((curBeat >= 72) && (curBeat < 103)){
+        if (curStep % 16 == 0) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+            FlxTween.tween(camHUD, {x: 0}, 0.5, {ease: FlxEase.quadOut});
+            camHUD.x=35;
+        }
+        if (curStep % 16 == 4) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+            FlxTween.tween(camHUD, {x: 0}, 0.5, {ease: FlxEase.quadOut});
+        }
+        if (curStep % 16 == 8) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+            FlxTween.tween(camHUD, {x: 0}, 0.5, {ease: FlxEase.quadOut});
+            camHUD.x=35;
+        }
+        if (curStep % 16 == 11) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+            FlxTween.tween(camHUD, {x: 0}, 0.5, {ease: FlxEase.quadOut});
+            camHUD.x=-35;
+        }
+        if (curStep % 16 == 14) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+            FlxTween.tween(camHUD, {x: 0}, 0.5, {ease: FlxEase.quadOut});
+            camHUD.x=35;
+        }
+    }
+    if ((curBeat >= 108) && (curBeat < 168)) {
+        if (curStep % 16 == 0) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.1;
+        }
+        if (curStep % 16 == 2) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.1;
+        }
+        if (curStep % 16 == 6) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.1;
+        }
+        if (curStep % 16 == 8) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.1;
+        }
+        if (curStep % 16 == 10) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.1;
+        }
+        if (curStep % 16 == 12) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.1;
+        }
+        if (curStep % 16 == 13) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.1;
+        }
+        if (curStep % 16 == 14) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.1;
+        }
+        if (curStep % 16 == 15) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.1;
+        }
+    }
+    if ((curBeat >= 172) && (curBeat < 220)) {
+        if (curStep % 16 == 0) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+        if (curStep % 16 == 4) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+        if (curStep % 16 == 8) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+        if (curStep % 16 == 11) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+
+        }       
+        if (curStep % 16 == 14) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+    }
+    if ((curBeat >= 236) && (curBeat < 300)) {
+        if (curStep % 16 == 0) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+        if (curStep % 16 == 4) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+        if (curStep % 16 == 8) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+        if (curStep % 16 == 11) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+        if (curStep % 16 == 14) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+    }
+    if ((curBeat >= 464) && (curBeat < 480)) {
+        if (curStep % 16 == 0) {
+            FlxTween.tween(camHUD, {angle: 0}, 0.75, {ease: FlxEase.expoOut});
+            camHUD.angle=20;
+        }
+        if (curStep % 16 == 4) {
+            FlxTween.tween(camHUD, {angle: 0}, 0.75, {ease: FlxEase.expoOut});
+            camHUD.angle=-20;
+        }
+        if (curStep % 16 == 8) {
+            FlxTween.tween(camHUD, {angle: 0}, 0.75, {ease: FlxEase.expoOut});
+            camHUD.angle=20;
+        }
+        if (curStep % 16 == 12) {
+            FlxTween.tween(camHUD, {angle: 0}, 0.75, {ease: FlxEase.expoOut});
+            camHUD.angle=-20;
+        }
+    }
+    if ((curBeat >= 464) && (curBeat < 476)) {
+        if (curStep % 16 == 0) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.75, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.15;
+        }
+        if (curStep % 16 == 4) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.75, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.15;
+        }
+        if (curStep % 16 == 8) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.75, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.15;
+        }
+        if (curStep % 16 == 12) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.75, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.15;
+        }
+    }
+    if ((curBeat >= 476) && (curBeat < 480)) {
+        if (curStep % 16 == 0) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.75, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.15;
+        }
+        if (curStep % 16 == 2) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.75, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.05;
+        }
+        if (curStep % 16 == 4) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.75, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.15;
+        }
+        if (curStep % 16 == 6) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.75, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.05;
+        }
+        if (curStep % 16 == 8) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.75, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.15;
+        }
+        if (curStep % 16 == 10) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.75, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.05;
+        }
+        if (curStep % 16 == 12) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.75, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.15;
+        }
+        if (curStep % 16 == 14) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.75, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.05;
+        }
+    }
+
+    if ((curBeat >= 480) && (curBeat < 548)) {
+        if (curStep % 16 == 0) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+        if (curStep % 16 == 2) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+        if (curStep % 16 == 6) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+        if (curStep % 16 == 8) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+        if (curStep % 16 == 10) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+        if (curStep % 16 == 12) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+        if (curStep % 16 == 13) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+        if (curStep % 16 == 14) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+        if (curStep % 16 == 15) {
+            FlxTween.tween(camHUD, {zoom: 1}, 0.5, {ease: FlxEase.expoOut});
+            camHUD.zoom=1.075;
+        }
+	}*/
 }

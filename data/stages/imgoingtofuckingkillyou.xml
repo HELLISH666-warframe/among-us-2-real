@@ -2,7 +2,7 @@
 <stage zoom="0.9" folder="stages">
    	<sprite name="sadmoon" x="0" y="-600" sprite="/fan-made_stuff/alyxs_stuff/giggad/sadmoon" scrollx="0" scrolyx="1.02" scale="2.5" />
    	<sprite name="backcity" x="0" y="-500" sprite="/fan-made_stuff/alyxs_stuff/giggad/backcity" scroll="0.15" scale="2.5" />
-	<sprite name="kamehameha" x="0" y="-3500" sprite="/fan-made_stuff/alyxs_stuff/giggad/kamehameha" scroll="0.175" scale="2.5" />
+	<sprite name="kamehameha" x="0" y="-1500" sprite="/fan-made_stuff/alyxs_stuff/giggad/kamehameha" scroll="0.175" scale="2.5" />
 	<sprite name="penty" x="0" y="-7000" sprite="/fan-made_stuff/alyxs_stuff/giggad/penty" scroll="0.2" scale="2.5" />
 	<sprite name="frontcity" x="0" y="-440" sprite="/fan-made_stuff/alyxs_stuff/giggad/frontcity" scroll="0.25" scale="2.5" />
 	<sprite name="building1" x="-400" y="325" sprite="/fan-made_stuff/alyxs_stuff/giggad/building1" scroll="0.4" scale="4" />
@@ -15,7 +15,7 @@
 	<sprite name="tree2" x="1600" y="-700" sprite="/fan-made_stuff/alyxs_stuff/giggad/tree2" scroll="0.8" scale="1" />
 	<sprite name="fronthill" x="0" y="65" sprite="/fan-made_stuff/alyxs_stuff/giggad/fronthill" scroll="0.8" scale="2.5" />
 	<sprite name="hind" x="0" y="-400" sprite="streetdsides/conall_bgBehind" scroll="0.8" scale="1" />
-	<sprite name="foreskin" x="0" y="325" sprite="/fan-made_stuff/alyxs_stuff/giggad/foreskin" scroll="1" scale="3" />
+	<sprite name="foreskin" x="0" y="214" sprite="/fan-made_stuff/alyxs_stuff/giggad/foreskin" scroll="1" scale="3" />
 	<sprite name="foreskinclean" x="-300" y="214" sprite="/fan-made_stuff/alyxs_stuff/giggad/foreskinclean" scroll="1" scale="3" />
 	<sprite name="noskin" x="0" y="325" sprite="streetdsides/conall_bg" scroll="1" scale="1" />
 	<sprite name="stone1" x="500" y="125" sprite="fan-made_stuff/alyxs_stuff/giggad/stonebit1" scroll="0.95" scale="1.25" />

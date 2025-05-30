@@ -4,5 +4,9 @@
 	"icon": "hellron-classic",
 	"port": "bleeding-classic",
 	"color": "#010000",
+	"difficulties": [
+		"HARD",
+		"OLD"
+	],
 	"version": "V3/Old"
 }

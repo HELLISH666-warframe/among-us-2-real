@@ -1,10 +1,10 @@
 <!DOCTYPE codename-engine-character>
-<character y="320" sprite="newcharstest/dsidesbf" flipX="true" icon="bf-dsides" color="#FD00FB">
+<character y="320" sprite="newcharstest/dsidesbf" flipX="true" isPlayer="true" icon="bf-dsides" color="#FD00FB">
 	<anim name="idle" anim="BF idle dance" x="-5" y="0" fps="24" loop="false"/>
-	<anim name="singLEFT" anim="BF NOTE LEFT0" x="-7" y="5" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="BF NOTE LEFT0" x="-5" y="7" fps="24" loop="false"/>
 	<anim name="singDOWN" anim="BF NOTE DOWN0" x="-6" y="-24" fps="24" loop="false"/>
 	<anim name="singUP" anim="BF NOTE UP0" x="15" y="39" fps="24" loop="false"/>
-	<anim name="singRIGHT" anim="BF NOTE RIGHT0" x="21" y="-2" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="BF NOTE RIGHT0" x="-35" y="-2" fps="24" loop="false"/>
 	<anim name="singLEFTmiss" anim="BF NOTE LEFT MISS" x="-7" y="7" fps="24" loop="false"/>
 	<anim name="singDOWNmiss" anim="BF NOTE DOWN MISS" x="-4" y="-24" fps="24" loop="false"/>
 	<anim name="singUPmiss" anim="BF NOTE UP MISS" x="15" y="42" fps="24" loop="false"/>
@@ -14,8 +14,8 @@
 	<anim name="firstDeath" anim="BF dies" x="-13" y="-20" fps="24" loop="false"/>
 	<anim name="deathLoop" anim="BF Dead Loop" x="-12" y="-20" fps="24" loop="true"/>
 	<anim name="deathConfirm" anim="BF Dead confirm" x="-12" y="46" fps="24" loop="false"/>
-	<anim name="singDOWN-alt" anim="BF NOTE DOWN DODGE" x="-1" y="30" fps="24" loop="false"/>
-	<anim name="singLEFT-alt" anim="BF NOTE RIGHT DODGE" x="42" y="0" fps="24" loop="false"/>
-	<anim name="singUP-alt" anim="BF NOTE UP DODGE" x="123" y="38" fps="24" loop="false"/>
-	<anim name="singRIGHT-alt" anim="BF NOTE LEFT DODGE" x="78" y="-13" fps="24" loop="false"/>
+	<anim name="singDOWN-alt" anim="BF NOTE DOWN DODGE" x="-71" y="5" fps="24" loop="false"/>
+	<anim name="singLEFT-alt" anim="BF NOTE LEFT DODGE" x="-18" y="-20" fps="24" loop="false"/>
+	<anim name="singUP-alt" anim="BF NOTE UP DODGE" x="-12" y="33" fps="24" loop="false"/>
+	<anim name="singRIGHT-alt" anim="BF NOTE RIGHT DODGE" x="34" y="3" fps="24" loop="false"/>
 </character>

@@ -9,23 +9,19 @@ import flixel.util.FlxTimer;
 import flixel.addons.display.FlxBackdrop;
 import lime.app.Application;
 
-	public var enterAccess:Int = 0;
-	public static var entering:Bool = false;
-	var bg:FlxSprite;
+public var enterAccess:Int = 0;
+public static var entering:Bool = false;
+var bg:FlxSprite;
 
-	override function create()
-	{
-		bg = new FlxSprite().loadGraphic(Paths.image('stages/antipiracy'));
-		bg.scale.set(0.5,0.5);
-		bg.screenCenter();
-		bg.scrollFactor.set();
-		add(bg);
-//		super.create();
-	}
+override function create(){
+	bg = new FlxSprite().loadGraphic(Paths.image('stages/antipiracy'));
+	bg.scale.set(0.5,0.5);
+	bg.screenCenter();
+	bg.scrollFactor.set();
+	add(bg);
+}
 
-override function update(elapsed:Float)
-{
-//	super.update(elapsed);
+override function update(elapsed:Float){
 	if (FlxG.keys.justPressed.ANY)
 	{
 		enterAccess = enterAccess + 1;

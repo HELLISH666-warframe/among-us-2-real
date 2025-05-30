@@ -3,9 +3,10 @@
 	"bpm": 100.0,
 	"icon": "ron-b",
 	"difficulties": [
-		"OLD",
-		"FLIP04-26_01-35"
+		"V1",
+		"V2",
+		"V3"
 	],
 	"port": "thanks_azer!/ron-b",
-	"version": "V2.5/3"
+	"version": "V2/2.5/3"
 }

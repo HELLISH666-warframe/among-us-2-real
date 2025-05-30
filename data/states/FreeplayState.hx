@@ -18,7 +18,7 @@ songs = [];
 songRealList = [
 	["ron","wasted","ayo","bloodshed","trojan-virus","Recycle-Bin","file-manipulation","factory-reset"],
 	["ron-classic","wasted-classic","ayo-classic","bloodshed-classic","trojan-virus-classic","bleeding-classic"],
-	["Tutorial","bloodbath","official-debate","gron","difficult-powers","bijuu","trouble","withered-tweaked","atelophobia","holy-shit-dave-fnf","slammed","meme-machine","frosting-over","ron-b","ron-dsides","bloodshed-b-old","sabotage-remix","lights-down-remix","pretty-wacky","cheese-touch","he-hates-me","certified-champion","rong-aisle","bloodshed-legacy-redux","clusterfunk","awesome-ron","oh-my-god-hes-ballin","fardventure","triad","bleeding","haemorrhage","homicidal-lunacy","bloodlovania","anti-piracy","run","run","run","run","run","run","run","run","run","run","run","run","apollo","techne"]
+	["Tutorial","bloodbath","official-debate","gron","difficult-powers","bijuu","trouble","withered-tweaked","atelophobia","holy-shit-dave-fnf","slammed","meme-machine","frosting-over","ron-b","ron-dsides","bloodshed-b-old","sabotage-remix","lights-down-remix","pretty-wacky","cheese-touch","he-hates-me","certified-champion","rong-aisle","bloodshed-legacy-redux","clusterfunk","awesome-ron","oh-my-god-hes-ballin","fardventure","triad","bleeding","haemorrhage","homicidal-lunacy","bloodlovania","anti-piracy","run","run","apollo","techne"]
 ];
 modelist = ["MAIN","CLASSIC","EXTRAS"];
 rsongsFound = songRealList[FlxG.save.data.freeplaything];
@@ -37,6 +37,8 @@ var grpSongs2:FlxTypedGroup<Alphabet> = [];
 var iconArray2:Array<HealthIcon> = [];
 var modeText:FlxText = new FlxText(10, 10, 0, modelistt, 48);
 var fanmade_text = new FlxText(540, 1, 0, official_or_not, 48);
+public var enterAccess:Int = 0;
+var dsides:Bool = false;
 var chromeOffset = (FlxG.save.data.chromeOffset/350);
 function postUpdate(elapsed:Float){time += elapsed;
 	chrom.data.rOffset.value = [chromeOffset*Math.sin(time)];
@@ -54,16 +56,22 @@ function postUpdate(elapsed:Float){time += elapsed;
 	if(controls.BACK)FlxG.switchState(new ModState('MasterFreeplayState'));
 }
 function update(elapsed:Float) {
-	if(((curSelected == 0)&&(modelistt=="EXTRAS")&&(controls.UP_P))){curSelected = 34;}
+	if((((curSelected == 0)&&(modelistt=="EXTRAS")&&(controls.UP_P)&&(!dsides)))){curSelected = 34;
+	enterAccess++;}
+	if((((curSelected == 33)&&(controls.DOWN_P)&&(!dsides)))){
+		changeSelection(4, true);
+	enterAccess++;}
+	if (enterAccess == 17)
+	dsides = true;
 }
 
 function shadering() {
     switch(songs[curSelected].displayName)
     {
 		case "gron": if(FlxG.save.data.grey)FlxG.camera.addShader(grey);camText.addShader(grey);
-		case "trojan-virus"|"Bleeding":glitch.data.on.value = [1.];
+		case "trojan-virus"|"Bleeding":glitch.on = 1.;
 		default:FlxG.camera.removeShader(grey);camText.removeShader(grey);
-			glitch.data.on.value = [0];
+			glitch.on = 0;
     }
 	diffText.color = switch(diffText.text)
 	{
@@ -133,8 +141,7 @@ function postCreate() {
 
 	for (i in 0...iconArray2.length) add(iconArray2[i]);
 	
-	for (i in [scoreText,scoreBG,diffText,portraitOverlay])
-		insert(4,i);
+		insert(4,portraitOverlay);
 		scoreBG.alpha = 0.3;
 
 	fanmade_text.setFormat(Paths.font("w95.otf"), 48, FlxColor.RED);
