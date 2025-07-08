@@ -2,7 +2,7 @@
 	"displayName": "bloodlovania",
 	"bpm": 100.0,
 	"icon": "dripron",
-	"port": "bloodlovania",
+	"port": "extra-side/bloodlovania",
 	"color": "#000000",
 	"version": "Fanmade"
 }

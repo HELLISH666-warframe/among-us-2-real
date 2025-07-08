@@ -4,5 +4,6 @@
 	"icon": "douyhe",
 	"port": "pretty-wacky",
 	"color": "#FFFFFF",
-	"version": "V2.5"
+	"version": "V2.5",
+	"classic":true
 }

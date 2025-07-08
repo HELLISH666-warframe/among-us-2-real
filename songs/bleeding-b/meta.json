@@ -1,0 +1,11 @@
+{
+	"displayName": "bleeding-b",
+	"bpm": 230.0,
+	"icon": "face",
+	"difficulties": [
+		"FLIP"
+	],
+	"port": "extra-side/bleeding-b",
+	"color": "#0020C0",
+	"version": "Fanmade"
+}

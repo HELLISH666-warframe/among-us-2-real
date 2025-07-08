@@ -1,5 +1,6 @@
 {
 	"displayName": "pretty-wacky-1",
 	"bpm": 165.0,
-	"icon": "douyhe"
+	"icon": "douyhe",
+	"classic":true
 }

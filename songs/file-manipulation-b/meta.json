@@ -1,0 +1,11 @@
+{
+	"displayName": "file-manipulation-b",
+	"bpm": 290.0,
+	"icon": "extra-side/ateloron-b",
+	"difficulties": [
+		"FLIP"
+	],
+	"port": "extra-side/file-manip-b-new",
+	"color": "#C00000",
+	"version": "???"
+}

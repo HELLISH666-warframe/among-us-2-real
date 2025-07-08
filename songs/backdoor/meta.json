@@ -1,0 +1,13 @@
+{
+	"displayName": "backdoor",
+	"bpm": 150.0,
+	"icon": "fanmade/alyxs_stuff/power_conall",
+	"difficulties": [
+		"STAINED"
+	],
+	"port": "fucking_useless",
+	"color": "#000000",
+	"version": "Fanmade",
+	"coopAllowed": true,
+	"opponentModeAllowed": true
+}

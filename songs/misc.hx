@@ -7,7 +7,7 @@ function create() {
     camOther2.bgColor = 0x00000000;
 }
 function postCreate() {
-    	FlxG.cameras.remove(camHUD, false);
+    FlxG.cameras.remove(camHUD, false);
     FlxG.cameras.add(camOther = new HudCamera(), false);
     camOther.bgColor = 0x00000000;
     FlxG.cameras.add(camHUD, false);

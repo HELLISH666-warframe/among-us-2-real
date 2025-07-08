@@ -2,5 +2,6 @@
 	"displayName": "wasted-2.5",
     "bpm": 120.0,
 	"icon": "ronslightly",
-	"color": "#F6B604"
+	"color": "#F6B604",
+	"classic":true
 }

@@ -4,10 +4,9 @@
 	"icon": "hellron",
 	"difficulties": [
 		"TWO",
-		"HARD",
-		"FANMADE-D"
+		"HARD"
 	],
 	"port": "bloodshed",
 	"color": "#000000",
-	"version": "V2.5/3/Fanmade"
+	"version": "V2.5/3"
 }

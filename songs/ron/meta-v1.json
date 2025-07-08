@@ -3,5 +3,6 @@
 	"bpm": 170.0,
 	"icon": "ron",
 	"port": "ron",
-	"color": "#fbff0b"
+	"color": "#fbff0b",
+	"classic":true
 }

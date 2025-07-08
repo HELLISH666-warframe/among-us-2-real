@@ -1,5 +1,6 @@
 {
 	"displayName": "ron-b",
 	"bpm": 185.0,
-	"icon": "ron-b"
+	"icon": "ron-b",
+	"classic":true
 }

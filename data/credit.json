@@ -243,6 +243,30 @@
 		"name": "ear",
 		"handle": "earframe",
 		"description": "Porter\n\nHELP_MY_SPACEBAR_BROKE.",
-		"social_link": "https://four.com/"
+		"social_link": "https://www.youtube.com/channel/UChiHoPl1aC5OAI9PFZzLHEg"
+	},
+	{
+		"name": "Not_ear",
+		"handle": "Sex Drifter",
+		"description": "Co-fan-build-owner, bad coder\n\nVersus Ron Ultimate Deluxe Restored Complete Edition would of been a better name",
+		"social_link": "https://store.epicgames.com/en-US/p/fortnite"
+	},
+	{
+		"name": "fan-made/alyx's_stuff/alyx",
+		"handle": "alyx",
+		"description": "Main coder of the dsides ron fan-mod\n\nWell, I did the thing.",
+		"social_link": "https://discord.gg/quQU9NDur7::FBE106"
+	},
+	{
+		"name": "fan-made/alyx's_stuff/shae",
+		"handle": "Shae",
+		"description": "Main artist of the dsides ron fan-mod\n\nShae Ball Blaster.",
+		"social_link": "https://www.youtube.com/@shaeronawesomeguy7773/featured"
+	},
+	{
+		"name": "fan-made/alyx's_stuff/cor",
+		"handle": "Cory",
+		"description": "Main composer of the dsides ron fan-mod.\n\nThe Devious Twiggler",
+		"social_link": "https://store.epicgames.com/en-US/p/fortnite"
 	}
 ]

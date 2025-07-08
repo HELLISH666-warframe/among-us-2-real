@@ -283,6 +283,11 @@ import StringTools;
 
 	override function update(elapsed:Float)
 	{
+		if (FlxG.keys.justPressed.A)
+			{
+				pressedSkip = true;
+				FlxG.switchState(new ModState('AntiPiracyState'));
+			}
 		time += elapsed;
 		chrom.data.rOffset.value = [chromeOffset*Math.sin(time)];
 		chrom.data.bOffset.value = [-chromeOffset*Math.sin(time)];

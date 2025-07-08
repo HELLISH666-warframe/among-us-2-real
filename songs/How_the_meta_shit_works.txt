@@ -1,0 +1,3 @@
+"version": I's used to indacate what versions the songs are from and what versions are ported.
+"classic": Used to turn off the v3 healthbar.
+"port": What freeplay portrait the freeplay gets for that song.

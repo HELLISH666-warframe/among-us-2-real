@@ -4,5 +4,6 @@
 	"icon": "bambi",
 	"port": "slammed",
 	"color": "#007F40",
-	"version": "V2.5"
+	"version": "V2.5",
+	"classic":true
 }

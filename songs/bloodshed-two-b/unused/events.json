@@ -1,0 +1,271 @@
+{
+	"song": {
+		"events": [
+			[
+				28285.7142857143,
+				[
+					[
+						"Camera Switch",
+						"0.1",
+						"off"
+					]
+				]
+			],
+			[
+				29142.8571428571,
+				[
+					[
+						"Change Character",
+						"dad",
+						"hellron2"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					],
+					[
+						"Camera Switch",
+						"0.1",
+						"on"
+					]
+				]
+			],
+			[
+				83892.8571428572,
+				[
+					[
+						"Camera Switch",
+						"0.1",
+						"off"
+					]
+				]
+			],
+			[
+				84000,
+				[
+					[
+						"Change Character",
+						"dad",
+						"bloodshedron"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					],
+					[
+						"Camera Switch",
+						"0.1",
+						"on"
+					]
+				]
+			],
+			[
+				97285.7142857143,
+				[
+					[
+						"Camera Switch",
+						"0.1",
+						"off"
+					]
+				]
+			],
+			[
+				97714.2857142857,
+				[
+					[
+						"Camera Switch",
+						"0.1",
+						"on"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					],
+					[
+						"Change Character",
+						"dad",
+						"hellron2"
+					]
+				]
+			],
+			[
+				156000,
+				[
+					[
+						"Flash Camera",
+						"1",
+						""
+					],
+					[
+						"Change Character",
+						"dad",
+						"bloodshedron"
+					]
+				]
+			],
+			[
+				224571.428571428,
+				[
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				253285.714285714,
+				[
+					[
+						"Camera Switch",
+						"0.33",
+						"off"
+					]
+				]
+			],
+			[
+				253714.285714285,
+				[
+					[
+						"Change Character",
+						"dad",
+						"bloodshedron"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				254035.714285714,
+				[
+					[
+						"Camera Switch",
+						"0.33",
+						"on"
+					]
+				]
+			],
+			[
+				281142.857142857,
+				[
+					[
+						"Flash Camera",
+						"1",
+						""
+					],
+					[
+						"Change Character",
+						"dad",
+						"hellron2"
+					]
+				]
+			],
+			[
+				337714.285714286,
+				[
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				370285.714285715,
+				[
+					[
+						"Flash Camera",
+						"1",
+						""
+					],
+					[
+						"Change Character",
+						"dad",
+						"bloodshedron"
+					]
+				]
+			],
+			[
+				399428.571428573,
+				[
+					[
+						"Change Character",
+						"dad",
+						"hellron2"
+					]
+				]
+			],
+			[
+				426857.142857145,
+				[
+					[
+						"Change Character",
+						"dad",
+						"bloodshedron"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				430285.714285716,
+				[
+					[
+						"Change Character",
+						"dad",
+						"bloodshedron"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				440571.428571431,
+				[
+					[
+						"Flash Camera",
+						"1",
+						""
+					],
+					[
+						"Change Scroll Speed",
+						"1.1",
+						""
+					]
+				]
+			],
+			[
+				553714.285714289,
+				[
+					[
+						"Change Character",
+						"dad",
+						"hellron2"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					],
+					[
+						"Change Scroll Speed",
+						"1.2",
+						""
+					]
+				]
+			]
+		]
+	}
+}

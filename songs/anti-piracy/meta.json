@@ -8,5 +8,6 @@
 	],
 	"port": "anti-piracy",
 	"color": "#000000",
-	"version": "V2.5"
+	"version": "V2.5",
+	"classic":true
 }

@@ -4,10 +4,9 @@
 	"icon": "ronpower",
 	"difficulties": [
 		"ALT",
-		"HARD",
-		"FANMADE-D"
+		"HARD"
 	],
 	"port": "trojan-virus",
 	"color": "#F6B604",
-	"version": "V2.5/3/Fanmade"
+	"version": "V2.5/3"
 }

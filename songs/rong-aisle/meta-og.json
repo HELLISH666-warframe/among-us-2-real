@@ -3,5 +3,6 @@
 	"bpm": 140.0,
 	"icon": "rondvd",
 	"port": "rong-aisle",
-	"color": "#F6B604"
+	"color": "#F6B604",
+	"classic":true
 }

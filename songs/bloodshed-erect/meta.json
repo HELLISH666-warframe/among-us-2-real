@@ -1,0 +1,11 @@
+{
+	"displayName": "bloodshed-erect",
+	"bpm": 170.0,
+	"icon": "hellron",
+	"difficulties": [
+		"ERECT"
+	],
+	"port": "extra-side/bloodshed-erect",
+	"color": "#F00000",
+	"version": "Fanmade"
+}

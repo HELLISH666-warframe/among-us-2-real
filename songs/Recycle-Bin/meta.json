@@ -4,5 +4,6 @@
 	"icon": "ron-usb",
 	"port": "file-manipulation",
 	"color": "#F6B604",
-	"version": "V2.5"
+	"version": "V2.5",
+	"classic":true
 }

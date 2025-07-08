@@ -1,11 +1,10 @@
-var chrom:CustomShader = new CustomShader("chromatic aberration");
-var wig:CustomShader = new CustomShader("glitchsmh");
-var vhs:CustomShader = new CustomShader("vhs");
-var crt:CustomShader = new CustomShader("fake CRT");
+var chrom = new CustomShader("chromatic aberration");
+var wig = new CustomShader("glitchsmh");
+var vhs = new CustomShader("vhs");
+var crt = new CustomShader("fake CRT");
 var time:Float = 0;
-var timer:Int;
 var mmtw:FlxSound = new FlxSound();
-override function postCreate() {
+function postCreate() {
 
 	mmtw = new FlxSound();
 	mmtw = FlxG.sound.load(Paths.music('breakfast'), 0, true);
@@ -18,37 +17,22 @@ override function postCreate() {
 		bg.scale.set(2.25,2.25);
 		bg.scrollFactor.set(0.1,0.1);
 		bg.alpha = 0.33;
-		titleAlphabet.visible = false;
-		disclaimer.visible = false;
 
-		screen = new FlxSprite().loadGraphic(Paths.image("warning/eatra-sides"));
-		screen.screenCenter();
-		screen.angle = -3;
-		screen.scale.set(0.55,0.55);
-		add(screen);
-		
-		FlxTween.tween(screen, {y: screen.y + 20}, 1, {ease: FlxEase.circInOut, type: FlxTween.PINGPONG});
-		FlxTween.tween(screen, {angle: 3}, 2, {ease: FlxEase.backInOut, type: FlxTween.PINGPONG});
-		if (FlxG.save.data.crt){FlxG.camera.addShader(crt);}
+		disclaimer.text="This is a fan-build and is not to be considered offical in any regard with the content in said fan-build and is still VERY un-finshed , but it will hopefully feature scrapped content , all of 2.5 menus and all and some bonus fan-made stuff.\n it will be finshed some day.\n --earframe";
+
+	if (FlxG.save.data.crt)FlxG.camera.addShader(crt);
 	if (FlxG.save.data.glitch) {FlxG.camera.addShader(wig);
 		wig.data.on.value = [1.];
 	}
-	if (FlxG.save.data.vhs) {FlxG.camera.addShader(vhs);}
-	if (FlxG.save.data.chrom) {FlxG.camera.addShader(chrom);
-		chrom.data.rOffset.value = [1/2];
-		chrom.data.gOffset.value = [0.0];
-		chrom.data.bOffset.value = [1 * -1];
-	}
+	if (FlxG.save.data.vhs) FlxG.camera.addShader(vhs);
+	if (FlxG.save.data.chrom) FlxG.camera.addShader(chrom);
 }
-override function update(elapsed:Float){time += elapsed;
+function update(elapsed:Float){time += elapsed;
 	chrom.data.rOffset.value = [0.005*Math.sin(time)];
 	chrom.data.bOffset.value = [-0.005*Math.sin(time)];
-	wig.data.iTime.value = [0.005*Math.sin(time)];
-    vhs.data.iTime.value = [1*Math.sin(time)];
-	timer += 1;
-	if (mmtw.volume < .5) {
-		mmtw.volume += elapsed * .01;
-	}
+	wig.iTime = time;
+    vhs.iTime = time;
+	if (mmtw.volume < .5)  mmtw.volume += elapsed * .01;
 	if (FlxG.keys.justPressed.ENTER){
 		mmtw.destroy();
 		FlxG.sound.play(Paths.sound('resumeSong'));

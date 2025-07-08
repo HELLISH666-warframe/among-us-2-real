@@ -18,9 +18,9 @@ songs = [];
 songRealList = [
 	["ron","wasted","ayo","bloodshed","trojan-virus","Recycle-Bin","file-manipulation","factory-reset"],
 	["ron-classic","wasted-classic","ayo-classic","bloodshed-classic","trojan-virus-classic","bleeding-classic"],
-	["Tutorial","bloodbath","official-debate","gron","difficult-powers","bijuu","trouble","withered-tweaked","atelophobia","holy-shit-dave-fnf","slammed","meme-machine","frosting-over","ron-b","ron-dsides","bloodshed-b-old","sabotage-remix","lights-down-remix","pretty-wacky","cheese-touch","he-hates-me","certified-champion","rong-aisle","bloodshed-legacy-redux","clusterfunk","awesome-ron","oh-my-god-hes-ballin","fardventure","triad","bleeding","haemorrhage","homicidal-lunacy","bloodlovania","anti-piracy","run","run","apollo","techne"]
+	["Tutorial","bloodbath","official-debate","gron","difficult-powers","bijuu","scrub-of-the-day","trouble","withered-tweaked","atelophobia","holy-shit-dave-fnf","slammed","meme-machine","frosting-over","ron-b","ron-dsides","bloodshed-b-old","sabotage-remix","lights-down-remix","pretty-wacky","cheese-touch","he-hates-me","certified-champion","rong-aisle","bloodshed-legacy-redux","clusterfunk","awesome-ron","oh-my-god-hes-ballin","fardventure","triad","bleeding","haemorrhage","anti-piracy"]
 ];
-modelist = ["MAIN","CLASSIC","EXTRAS"];
+modelist = ["MAIN","CLASSIC","EXTRAS","FANMADE","UNFINSHED"];
 rsongsFound = songRealList[FlxG.save.data.freeplaything];
 modelistt = modelist[FlxG.save.data.freeplaything];
 
@@ -54,15 +54,6 @@ function postUpdate(elapsed:Float){time += elapsed;
 	portraitOverlay.y = portrait.y;
 	portraitOverlay.angle = portrait.angle;
 	if(controls.BACK)FlxG.switchState(new ModState('MasterFreeplayState'));
-}
-function update(elapsed:Float) {
-	if((((curSelected == 0)&&(modelistt=="EXTRAS")&&(controls.UP_P)&&(!dsides)))){curSelected = 34;
-	enterAccess++;}
-	if((((curSelected == 33)&&(controls.DOWN_P)&&(!dsides)))){
-		changeSelection(4, true);
-	enterAccess++;}
-	if (enterAccess == 17)
-	dsides = true;
 }
 
 function shadering() {
@@ -118,6 +109,7 @@ function create(){
 	modeText.setFormat(Paths.font("w95.otf"), 48, FlxColor.WHITE);
 	insert(2,modeText);
 
+	if(FlxG.save.data.freeplaything==3)portrait.x=900;
 	portrait.updateHitbox();
 	insert(2,portrait);
 }
@@ -137,12 +129,15 @@ function postCreate() {
 	bg.screenCenter();
 
 	var bar:FlxSprite = CoolUtil.loadAnimatedGraphic(new FlxSprite(490,-20), Paths.image('menus/freeplay/bar'));
+	if(FlxG.save.data.freeplaything==3){
+		bar.x=-100;
+	}
 	insert(3,bar);
 
 	for (i in 0...iconArray2.length) add(iconArray2[i]);
 	
-		insert(4,portraitOverlay);
-		scoreBG.alpha = 0.3;
+	insert(4,portraitOverlay);
+	scoreBG.alpha = 0.3;
 
 	fanmade_text.setFormat(Paths.font("w95.otf"), 48, FlxColor.RED);
 	fanmade_text.angle=-3;
@@ -185,6 +180,12 @@ function postCreate() {
 		add(i);
 		i.start(false, 0.05);
 	}
+	if(FlxG.save.data.freeplaything==3){
+		FlxG.camera.fade(FlxColor.BLACK, 0.7, true);
+		FlxTween.tween(bar, {angle:30}, 0.4, {ease: FlxEase.quintIn});
+		FlxTween.tween(bar, {x:400}, 0.4, {ease: FlxEase.quintIn});
+		FlxTween.tween(portrait, {x: portrait.x - 300,angle:5}, 0.5, {ease: FlxEase.quintIn});
+	}
 }
 function onChangeSelection(event) {
 	if (event.change == 0) event.playMenuSFX = false;
@@ -208,8 +209,21 @@ function onChangeSelection(event) {
 	
 		iconArray2[curSelected].alpha = 1;
 		shadering();}});
+
+//acts as an alt feeplay of some sorts--Drifter
+if(FlxG.save.data.freeplaything==3){
+	FlxTween.tween(portrait, {y: portrait.y + 300}, 0.2, {ease: FlxEase.quintIn, onComplete: function(twn:FlxTween) {
+		portrait.loadGraphic(preload[val]);
+		portrait.screenCenter(FlxAxes.Y);
+		var mfwY2 = portrait.y;
+		portrait.y -= 20;
+		FlxTween.tween(portrait, {y: mfwY2}, 0.4, {ease: FlxEase.elasticOut});
+	}});
+}
+if(FlxG.save.data.freeplaything!=3){
 	FlxTween.tween(portrait, {y: portrait.y + 45, angle: 5}, 0.2, {ease: FlxEase.quintIn, onComplete: function(twn:FlxTween) {
 		portrait.loadGraphic(preload[val]);
+		if(FlxG.save.data.freeplaything!=3)
 		portrait.screenCenter();
 		var mfwY = portrait.y;
 		portrait.y -= 20;
@@ -217,4 +231,8 @@ function onChangeSelection(event) {
 		FlxTween.tween(portrait, {y: mfwY, angle: 0}, 0.4, {ease: FlxEase.elasticOut});
 	}});
 }
+}
+
+
+
 public static function lerpFix(value:Float) {return value / (60 / 60);}

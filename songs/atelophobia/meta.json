@@ -8,5 +8,6 @@
 		"HARD"
 	],
 	"color": "#000000",
-	"version": "V2/2.5"
+	"version": "V2/2.5",
+	"classic":true
 }

@@ -30,6 +30,6 @@ override function update(elapsed:Float){
 	if ((enterAccess >= 50) && (entering == false))
 	{		
 		FlxG.switchState(new PlayState());
-		PlayState.loadSong("anti-piracy copy", "hard");
+		PlayState.loadSong("anti-piracy", "hard");
 	}
 }

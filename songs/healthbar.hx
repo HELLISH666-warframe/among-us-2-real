@@ -5,6 +5,8 @@ public var healthBarBG1:FlxSprite;
 public var healthBarBG2:FlxSprite;
 public var healthBar1:FlxBar;
 
+public var classic:Bool = PlayState.instance.SONG.meta.classic;
+
 public function evilbar() {
     healthBarBG1.loadGraphic(Paths.image("game/healthbar/healthBarintheworks2"));
     healthBarBG2.loadGraphic(Paths.image("game/healthbar/healthBarintheworks2"));
@@ -39,10 +41,7 @@ function postUpdate(elapsed:Float) {
     healthBarBG2.clipRect = healthBarBG2.clipRect; 
 }
 function postCreate() {
-    switch(curSong)
-    {
-        case "ron-classic"|"wasted-classic"|"ayo-classic"|"bloodshed-classic"|"trojan-virus-classic"|"bleeding-classic":
-        default:
+    if(!classic||(StringTools.endsWith(curSong, "classic"))){
         healthBarBG.alpha = healthBar.alpha=0.0001;
         insert(1,healthBarBG1);
         insert(1,healthBarBG2);

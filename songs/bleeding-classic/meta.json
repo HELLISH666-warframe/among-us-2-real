@@ -8,5 +8,6 @@
 		"HARD",
 		"OLD"
 	],
-	"version": "V3/Old"
+	"version": "V3/Old",
+	"classic":true
 }

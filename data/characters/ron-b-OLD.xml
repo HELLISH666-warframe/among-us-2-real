@@ -1,10 +1,9 @@
 <!DOCTYPE codename-engine-character>
-<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="BsidesNEW" icon="ron-b" color="#ff00ff" y="350" camx="-320" camy="-120">
-	<anim name="idle" anim="Idle" x="185" y="170" loop="true"/>
-	<anim name="singLEFT" anim="Sing Left" x="305" y="154"/>
-	<anim name="singDOWN" anim="Sing Down" x="210" y="69"/>
-	<anim name="singUP" anim="Sing Up" x="224" y="207"/>
-	<anim name="singRIGHT" anim="Sing Right" x="72" y="154"/>
-	<anim name="hey" anim="Ugh" x="257" y="165"/>
+<character x="300" y="350" sprite="BsidesNEW" camx="-320" camy="-120" icon="ron-b" color="#FF00FF">
+	<anim name="idle" anim="Idle" x="185" y="170" fps="24" loop="true"/>
+	<anim name="singLEFT" anim="Sing Left" x="305" y="154" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="Sing Down" x="210" y="69" fps="24" loop="false"/>
+	<anim name="singUP" anim="Sing Up" x="224" y="207" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="Sing Right" x="72" y="154" fps="24" loop="false"/>
+	<anim name="hey" anim="Ugh" x="257" y="165" fps="24" loop="false"/>
 </character>

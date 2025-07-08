@@ -1,8 +1,8 @@
 {
 	"displayName": "Lost-bloodshed",
-	"bpm": 100.0,
+	"bpm": 170.0,
 	"icon": "hellron",
-	"port": "lost-bloodshed",
+	"port": "extra-side/lost-bloodshed",
 	"color": "#F00000",
 	"version": "Fanmade"
 }

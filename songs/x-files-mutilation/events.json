@@ -1,0 +1,23 @@
+{
+	"song": {
+		"events": [
+			[
+				98092.4149956408,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bloodshedron-playable"
+					],
+					[
+						"Toggle Trail",
+						"",
+						"FF0000"
+					]
+				],
+				null,
+				""
+			]
+		]
+	}
+}

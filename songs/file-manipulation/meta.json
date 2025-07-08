@@ -4,5 +4,6 @@
 	"icon": "ateloron",
 	"port": "file-manipulation",
 	"color": "#C02078",
-	"version": "V2.5"
+	"version": "V2.5",
+	"classic":true
 }

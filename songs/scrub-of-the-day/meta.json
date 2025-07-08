@@ -4,5 +4,6 @@
 	"icon": "bijuuron",
 	"port": "bijuu",
 	"color": "#00B439",
-	"version": "V2.5"
+	"version": "V2.5",
+	"classic":true
 }

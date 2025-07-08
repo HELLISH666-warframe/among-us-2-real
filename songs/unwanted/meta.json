@@ -1,0 +1,11 @@
+{
+	"displayName": "unwanted",
+	"bpm": 170.0,
+	"icon": "ronslightly",
+	"difficulties": [
+		"COOL"
+	],
+	"port": "extra-side/unwanted",
+	"color": "#F00000",
+	"version": "Fanmade"
+}
